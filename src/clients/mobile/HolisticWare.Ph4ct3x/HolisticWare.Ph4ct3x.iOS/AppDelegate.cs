@@ -27,7 +27,14 @@ namespace HolisticWare.Ph4ct3x.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			Forms.Init();
+			#region Code for starting up the Xamarin Test Cloud Agent
+		    #if DEBUG
+		    // This is not necessary for Android applications
+		    Xamarin.Calabash.Start();
+		    #endif
+		    #endregion
+
+    		Forms.Init();
 
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 

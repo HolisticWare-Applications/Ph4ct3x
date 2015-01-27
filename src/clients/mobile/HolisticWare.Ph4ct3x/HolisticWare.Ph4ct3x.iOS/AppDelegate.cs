@@ -13,10 +13,13 @@ namespace HolisticWare.Ph4ct3x.iOS
 	// User Interface of the application, as well as listening (and optionally responding) to 
 	// application events from iOS.
 	[Register("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate
+	public partial class AppDelegate 
+		: 
+		// UIApplicationDelegate
+	    global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate // superclass new in 1.3	
 	{
 		// class-level declarations
-		UIWindow window;
+		//UIWindow window;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -34,7 +37,14 @@ namespace HolisticWare.Ph4ct3x.iOS
 		    #endif
 		    #endregion
 
-    		Forms.Init();
+			global::Xamarin.Forms.Forms.Init ();
+
+	        LoadApplication (new App ());  // method is new in 1.3
+
+	        return base.FinishedLaunching (app, options);
+
+    		/*
+           	Forms.Init();
 
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 
@@ -43,6 +53,8 @@ namespace HolisticWare.Ph4ct3x.iOS
 			window.MakeKeyAndVisible();
 
 			return true;
+			*/
+
 		}
 	}
 }

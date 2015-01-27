@@ -7,19 +7,19 @@ using Xamarin.Forms;
 
 namespace HolisticWare.Ph4ct3x
 {
-	public class App
+	public class App : Application // superclass new in 1.3
 	{
-		public static Page GetMainPage()
+		public App ()
+	    {
+	        // The root page of your application
+	        MainPage = GetMainPage(); // property new in 1.3
+
+	        return;
+	    }
+
+		public Page GetMainPage()
 		{
-			return new ContentPage
-			{
-				Content = new Label
-				{
-					Text = "Hello, Forms !",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
-			};
+			return new NavigationPage(new About());
 		}
 	}
 }

@@ -1,0 +1,40 @@
+﻿{
+	"webroot": "wwwroot",
+	"version": "1.0.0-*",
+	"exclude": [
+		"wwwroot"
+	],
+	"packExclude": [
+		"**.kproj",
+		"**.user",
+		"**.vspscc"
+	],
+	"dependencies": {
+		//===================================================================
+		// Initial dependencies for Empty project
+		//----------------------------------------------------
+		//Server Implemenation for ASP.NET 5
+		"Microsoft.AspNet.Server.IIS": "1.0.0-beta1",
+		//===================================================================
+		// Added dependencies
+		//----------------------------------------------------
+		// Hositng + servers
+		//	Core hosting infrastructure for ASP.NET 5
+		"Microsoft.AspNet.Hosting": "1.0.0-beta1",
+		//	Self host web server
+		"Microsoft.AspNet.Server.WebListener": "1.0.0-beta1",
+		// Server for hosting on OS X, Linux
+		"Kestrel": "1.0.0-beta1",
+		//----------------------------------------------------
+		"Microsoft.AspNet.Mvc": "6.0.0-beta1",
+		// Middleware for error pages, diagnostics
+		"Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
+		// JSON configuration source for the ConfigurationModel
+		"Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1"
+	},
+	"frameworks": 
+	{
+		"aspnet50": { },
+		"aspnetcore50": { }
+	}
+}

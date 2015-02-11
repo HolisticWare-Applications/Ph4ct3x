@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
@@ -11,6 +12,9 @@ namespace Ph4ct3x.Server
     {
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddHosting();
+			services.AddOptions();
+			services.AddLogging();
 			services.AddMvc();
 
 

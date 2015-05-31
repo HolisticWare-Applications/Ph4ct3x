@@ -8,29 +8,17 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-using Xamarin.Forms;
-
-
 namespace HolisticWare.Ph4ct3x.WinPhone
 {
-	public partial class MainPage 
-		: 
-		// PhoneApplicationPage
-		global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage // superclass new in 1.3
+	public partial class MainPage : global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage
 	{
 		public MainPage()
 		{
 			InitializeComponent();
-
 			SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
 			global::Xamarin.Forms.Forms.Init();
-			LoadApplication(new HolisticWare.Ph4ct3x.App()); // new in 1.3
-
-   			/*
-			Forms.Init();
-			Content = HolisticWare.Ph4ct3x.App.GetMainPage().ConvertPageToUIElement(this);
-			*/
+			LoadApplication(new HolisticWare.Ph4ct3x.App());
 		}
 	}
 }

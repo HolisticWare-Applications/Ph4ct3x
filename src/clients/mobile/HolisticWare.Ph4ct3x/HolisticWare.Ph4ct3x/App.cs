@@ -7,19 +7,31 @@ using Xamarin.Forms;
 
 namespace HolisticWare.Ph4ct3x
 {
-	public class App : Application // superclass new in 1.3
+	public class App : Application
 	{
-		public App ()
-	    {
-	        // The root page of your application
-	        MainPage = GetMainPage(); // property new in 1.3
-
-	        return;
-	    }
-
-		public Page GetMainPage()
+		public App()
 		{
-			return new NavigationPage(new About());
+			// The root page of your application
+			MainPage = 
+				new NavigationPage
+				(
+					new HolisticWare.Ph4ct3x.UserInterface.PagePh4ct3x()
+				);
+		}
+
+		protected override void OnStart()
+		{
+			// Handle when your app starts
+		}
+
+		protected override void OnSleep()
+		{
+			// Handle when your app sleeps
+		}
+
+		protected override void OnResume()
+		{
+			// Handle when your app resumes
 		}
 	}
 }

@@ -2,7 +2,7 @@
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US"/>
-  <App xmlns="" ProductID="{fd707684-da85-43de-8025-1948bf97e956}" Title="HolisticWare.Ph4ct3x.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="HolisticWare.Ph4ct3x.WinPhone author" Description="Sample description" Publisher="HolisticWare.Ph4ct3x.WinPhone" PublisherID="{b7407143-6a93-4702-98e8-90dc3fb751c6}">
+  <App xmlns="" ProductID="{76ffd177-078d-4ea7-bfa0-3c36d04628fd}" Title="HolisticWare.Ph4ct3x.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="HolisticWare.Ph4ct3x.WinPhone author" Description="Sample description" Publisher="HolisticWare.Ph4ct3x.WinPhone" PublisherID="{93f08744-67c3-4b6b-9f11-c3963ebcab6f}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING"/>

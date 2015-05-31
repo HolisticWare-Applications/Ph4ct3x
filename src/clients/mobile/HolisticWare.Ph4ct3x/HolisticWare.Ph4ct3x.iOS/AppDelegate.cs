@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-
-using Xamarin.Forms;
+using Foundation;
+using UIKit;
 
 namespace HolisticWare.Ph4ct3x.iOS
 {
@@ -13,14 +11,8 @@ namespace HolisticWare.Ph4ct3x.iOS
 	// User Interface of the application, as well as listening (and optionally responding) to 
 	// application events from iOS.
 	[Register("AppDelegate")]
-	public partial class AppDelegate 
-		: 
-		// UIApplicationDelegate
-	    global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate // superclass new in 1.3	
+	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
 	{
-		// class-level declarations
-		//UIWindow window;
-
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
 		// method you should instantiate the window, load the UI into it and then make the window
@@ -30,31 +22,10 @@ namespace HolisticWare.Ph4ct3x.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			#region Code for starting up the Xamarin Test Cloud Agent
-		    #if DEBUG
-		    // This is not necessary for Android applications
-		    Xamarin.Calabash.Start();
-		    #endif
-		    #endregion
+			global::Xamarin.Forms.Forms.Init();
+			LoadApplication(new App());
 
-			global::Xamarin.Forms.Forms.Init ();
-
-	        LoadApplication (new App ());  // method is new in 1.3
-
-	        return base.FinishedLaunching (app, options);
-
-    		/*
-           	Forms.Init();
-
-			window = new UIWindow(UIScreen.MainScreen.Bounds);
-
-			window.RootViewController = App.GetMainPage().CreateViewController();
-
-			window.MakeKeyAndVisible();
-
-			return true;
-			*/
-
+			return base.FinishedLaunching(app, options);
 		}
 	}
 }

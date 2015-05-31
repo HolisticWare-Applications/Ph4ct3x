@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="HolisticWare.Ph4ct3x.UserInterface.PagePh4ct3x"
+	>
+	<TabbedPage.Children>
+		<!--
+		http://www.patridgedev.com/2015/03/07/xamarin-forms-switching-tabbedpage-tabs-programmatically/
+
+		https://forums.xamarin.com/discussion/17704/navigationpage-in-xaml
+		http://forums.xamarin.com/discussion/17704/navigationpage-in-xaml
+		http://forums.xamarin.com/discussion/19680/navigationpage-example
+	
+
+		<NavigationPage
+			Title="Navigation"
+			>
+			<x:Arguments>
+				<Page>
+					<ScrollView>
+						<StackLayout 
+							x:Name="layout" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="Center">  
+						<ActivityIndicator x:Name="activity"></ActivityIndicator>                                                   
+						</StackLayout>  
+					</ScrollView>    
+				</Page>    
+			</x:Arguments>		
+		</NavigationPage>
+		-->
+	    <ContentPage Title="Ph4ct3x" >
+		    <StackLayout>
+			    <TableView>
+			        <TableView.Root>
+			            <TableSection Title="User Personal Data">
+			            	<ViewCell>
+		                        <StackLayout 
+		                        	Orientation="Horizontal"
+
+		                        	>
+					            		<DatePicker
+					            			HorizontalOptions="FillAndExpand"
+					            			>
+					            		</DatePicker>
+					            		<TimePicker
+					            			HorizontalOptions="FillAndExpand"
+					            			>
+					            		</TimePicker>
+		                        </StackLayout>
+			            	</ViewCell>
+			            </TableSection>
+			            <TableSection Title="User Personal Data">
+			                <ViewCell>
+			                    <ViewCell.View>
+			                        <StackLayout Orientation="Horizontal" >
+				                        <Label 
+				                        	Text="User:"
+				                        	>
+				                        </Label>
+										<Picker 
+											x:Name="IndustryTypePicker1" 
+											SelectedIndex="{Binding Industry}" 
+											HorizontalOptions="FillAndExpand"
+											>
+											<Picker.Items>
+												<x:String>jaja</x:String>
+												<x:String>zunzo</x:String>
+												<x:String>vyeko</x:String>
+												<x:String>chookee</x:String> 
+												<x:String>moljac</x:String> 
+											</Picker.Items>
+										</Picker> 	
+	    		                        <Button 
+				                        	Text="View"
+	    		                        	x:Name="buttonUserView"
+	    		                        	Clicked="buttonUserView_Clicked"
+				                        	>
+				                        </Button>
+	    		                        <Button 
+				                        	Text="Add"
+				                        	>
+				                        </Button>
+			                        </StackLayout>      
+			                    </ViewCell.View>
+			                </ViewCell>
+			            </TableSection>
+			        </TableView.Root>
+			    </TableView>
+
+			    <!--
+			    TODO: add to Samples.XamarinForms
+			    <TableView>
+			        <TableView.Root>
+			            <TableSection Title="Test">     
+			                <EntryCell Label="EntryCell"></EntryCell>
+			                <TextCell Text="Test"></TextCell>
+			                <ViewCell>
+			                    <ViewCell.View>
+			                        <StackLayout Orientation="Horizontal" >
+			                        <BoxView Color="Red"></BoxView>
+			                        <StackLayout>
+			                            <Label Text="News Item 1"></Label>
+			                            <Label Text="News URL 1"></Label>
+			                        </StackLayout>
+			                        <BoxView x:Name="boxView1" Color="Blue" ></BoxView>
+			                        </StackLayout>      
+			                    </ViewCell.View>
+			                </ViewCell>
+			            </TableSection>
+			        </TableView.Root>
+			    </TableView>
+			    -->
+		    </StackLayout>
+	    </ContentPage>
+	    <ContentPage Title="About">
+		    <StackLayout>
+			    <Label Text="Above TableView"></Label>
+			    <TableView>
+			        <TableView.Root>
+			            <TableSection Title="Test">     
+			                <EntryCell Label="EntryCell"></EntryCell>
+			                <TextCell Text="Test"></TextCell>
+			                <ViewCell>
+			                    <ViewCell.View>
+			                        <StackLayout Orientation="Horizontal" >
+			                        <BoxView Color="Red"></BoxView>
+			                        <StackLayout>
+			                            <Label Text="News Item 1"></Label>
+			                            <Label Text="News URL 1"></Label>
+			                        </StackLayout>
+			                        <BoxView x:Name="boxView2" Color="Blue" ></BoxView>
+			                        </StackLayout>      
+			                    </ViewCell.View>
+			                </ViewCell>
+			            </TableSection>
+			        </TableView.Root>
+			    </TableView>
+		    </StackLayout>
+	    </ContentPage>
+	    <ContentPage Title="Settings">
+	    </ContentPage>
+	</TabbedPage.Children>
+
+</TabbedPage>

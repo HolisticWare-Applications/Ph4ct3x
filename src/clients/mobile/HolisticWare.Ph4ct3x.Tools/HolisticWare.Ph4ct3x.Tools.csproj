@@ -36,6 +36,7 @@
     <Compile Include="Object.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Gender.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Insights">

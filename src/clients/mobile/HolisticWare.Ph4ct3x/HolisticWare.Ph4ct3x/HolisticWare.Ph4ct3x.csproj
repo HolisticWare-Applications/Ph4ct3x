@@ -63,8 +63,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\HolisticWare.Ph4ct3x.Tools\HolisticWare.Ph4ct3x.Tools.csproj">
+      <Project>{166EA8C1-8508-4BEB-A332-57B5A3CD0D94}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HolisticWare.Ph4ct3x.Tests.Motorics\HolisticWare.Ph4ct3x.Tests.Motorics.csproj">
+      <Project>{867B0701-24B7-427A-B4A7-C5D91AABBFAA}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tests.Motorics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HolisticWare.Ph4ct3x.Tests.Anthropometrics\HolisticWare.Ph4ct3x.Tests.Anthropometrics.csproj">
+      <Project>{1C704FB5-45D9-482D-A857-A69BA949C0AD}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tests.Anthropometrics</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\HolisticWare.Ph4ct3x.UserInterface\HolisticWare.Ph4ct3x.UserInterface.csproj">
-      <Project>{63F57DB7-1FB6-45D4-9387-4F664C989A52}</Project>
+      <Project>{4F678CE2-6D2C-40B2-BA71-AF8378AB296D}</Project>
       <Name>HolisticWare.Ph4ct3x.UserInterface</Name>
     </ProjectReference>
   </ItemGroup>
@@ -75,4 +87,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <ItemGroup>
+    <Folder Include="UserInterface\" />
+  </ItemGroup>
 </Project>

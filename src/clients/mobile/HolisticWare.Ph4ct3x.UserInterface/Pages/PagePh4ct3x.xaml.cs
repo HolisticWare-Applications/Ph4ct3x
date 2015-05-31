@@ -11,13 +11,6 @@ namespace HolisticWare.Ph4ct3x.UserInterface
 		{
 			InitializeComponent ();
 		}
-
-		protected async void buttonUserView_Clicked (object sender, EventArgs ea)
-		{
-			await this.Navigation.PushAsync(new PageDataPersonal());
-
-			return;
-		}
 	}
 }
 

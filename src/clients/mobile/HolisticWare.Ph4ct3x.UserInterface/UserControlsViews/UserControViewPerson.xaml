@@ -19,7 +19,28 @@
 			</Grid.ColumnDefinitions>	
 
 			<Label
-				x:Name="labelPersonnameFirst"
+				Grid.Row="0" Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				Text="User Data"
+				>
+			</Label>
+
+			<Label
+				x:Name="labelPersonnNmeFirst"
+				Grid.Row="1" Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				Text="Name First:"
+				>
+			</Label>
+			<Entry
+				x:Name="editPersonnNmeFirst"
+				Grid.Row="0" Grid.Column="1"
+				HorizontalOptions="FillAndExpand"
+				>
+			</Entry>
+
+			<Label
+				x:Name="labelPersonNameLast"
 				Grid.Row="0" Grid.Column="0"
 				HorizontalOptions="FillAndExpand"
 				Text="Name First:"
@@ -31,6 +52,7 @@
 				HorizontalOptions="FillAndExpand"
 				>
 			</Entry>
+
 		</Grid>
 	</ContentView.Content>
 </ContentView>

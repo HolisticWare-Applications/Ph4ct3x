@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="HolisticWare.Ph4ct3x.UserInterface.UserControlViewMainMenu"
+	>
+	<ContentView.Content>
+    	<Grid
+    		>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>	
+
+			<Label
+				Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+				Text="Date / Time Data"
+				>
+			</Label>
+
+    		<DatePicker
+    			x:Name="pickerDate"
+				Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+    			HorizontalOptions="FillAndExpand"
+    			>
+    		</DatePicker>
+    		<TimePicker
+    			x:Name="pickerTime"
+				Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"
+    			HorizontalOptions="FillAndExpand"
+    			>
+    		</TimePicker>
+
+			<Label
+				Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+				Text="User Data"
+				>
+			</Label>
+
+			<Label
+				Grid.Row="3" Grid.Column="0"
+				Text="User:"
+				>
+			</Label>
+			<Picker 
+				x:Name="pickerUser" 
+				SelectedIndex="{Binding Users}" 
+				HorizontalOptions="FillAndExpand"
+		    	Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+				>
+				<Picker.Items>
+					<x:String>jaja</x:String>
+					<x:String>zunzo</x:String>
+					<x:String>vyeko</x:String>
+					<x:String>chookee</x:String> 
+					<x:String>moljac</x:String> 
+				</Picker.Items>
+			</Picker> 	
+
+			<Button
+				x:Name="buttonUserAdd" 
+				HorizontalOptions="FillAndExpand"
+		    	Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+		    	Clicked="buttonUserAdd_Clicked"
+		    	Text="Add User"
+				>
+			</Button>
+			<Button
+				x:Name="buttonUserView" 
+				HorizontalOptions="FillAndExpand"
+		    	Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"
+		    	Clicked="buttonUserView_Clicked"
+		    	Text="View User"
+				>
+			</Button>
+
+    	</Grid>
+    	<!--
+	    <StackLayout>
+	    -->
+    	<!--
+		    <TableView>
+		        <TableView.Root>
+		            <TableSection Title="User Personal Data">
+		            	<ViewCell>
+	                        <StackLayout 
+	                        	Orientation="Horizontal"
+	                        	>
+				            		<DatePicker
+				            			HorizontalOptions="FillAndExpand"
+				            			>
+				            		</DatePicker>
+				            		<TimePicker
+				            			HorizontalOptions="FillAndExpand"
+				            			>
+				            		</TimePicker>
+	                        </StackLayout>
+		            	</ViewCell>
+		            </TableSection>
+		            <TableSection Title="User Personal Data">
+		                <ViewCell>
+		                    <ViewCell.View>
+		                    	<StackLayout>
+									<Grid
+										>
+										<Grid.RowDefinitions>
+											<RowDefinition Height="Auto" />
+										</Grid.RowDefinitions>
+
+										<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*" />
+										<ColumnDefinition Width="3*" />
+										</Grid.ColumnDefinitions>	
+
+									    <Label 
+									    	Grid.Row="0" Grid.Column="0"
+									    	Text="User:"
+									    	>
+									    </Label>
+										<Picker 
+											x:Name="IndustryTypePicker1" 
+											SelectedIndex="{Binding Industry}" 
+											HorizontalOptions="FillAndExpand"
+									    	Grid.Row="0" Grid.Column="1"
+											>
+											<Picker.Items>
+												<x:String>jaja</x:String>
+												<x:String>zunzo</x:String>
+												<x:String>vyeko</x:String>
+												<x:String>chookee</x:String> 
+												<x:String>moljac</x:String> 
+											</Picker.Items>
+										</Picker> 	
+									</Grid>
+									<Grid
+										>
+										<Grid.RowDefinitions>
+											<RowDefinition Height="Auto" />
+										</Grid.RowDefinitions>
+
+										<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*" />
+										<ColumnDefinition Width="*" />
+										</Grid.ColumnDefinitions>
+
+										<Button
+											x:Name="buttonUserAdd" 
+											HorizontalOptions="FillAndExpand"
+									    	Grid.Row="0" Grid.Column="0"
+									    	Text="Add User"
+											>
+										</Button>
+										<Button
+											x:Name="buttonUserView" 
+											HorizontalOptions="FillAndExpand"
+									    	Grid.Row="0" Grid.Column="1"
+									    	Text="View User"
+											>
+										</Button>
+
+									</Grid>
+		                    	</StackLayout>
+		                    </ViewCell.View>
+		                </ViewCell>
+		            </TableSection>
+		        </TableView.Root>
+		    </TableView>
+		    -->
+
+		    <!--
+		    TODO: add to Samples.XamarinForms
+		    <TableView>
+		        <TableView.Root>
+		            <TableSection Title="Test">     
+		                <EntryCell Label="EntryCell"></EntryCell>
+		                <TextCell Text="Test"></TextCell>
+		                <ViewCell>
+		                    <ViewCell.View>
+		                        <StackLayout Orientation="Horizontal" >
+		                        <BoxView Color="Red"></BoxView>
+		                        <StackLayout>
+		                            <Label Text="News Item 1"></Label>
+		                            <Label Text="News URL 1"></Label>
+		                        </StackLayout>
+		                        <BoxView x:Name="boxView1" Color="Blue" ></BoxView>
+		                        </StackLayout>      
+		                    </ViewCell.View>
+		                </ViewCell>
+		            </TableSection>
+		        </TableView.Root>
+		    </TableView>
+		    -->
+		<!--
+	    </StackLayout>
+	    -->
+	</ContentView.Content>
+</ContentView>

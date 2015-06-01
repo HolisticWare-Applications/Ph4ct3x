@@ -48,6 +48,10 @@
       <Project>{1C704FB5-45D9-482D-A857-A69BA949C0AD}</Project>
       <Name>HolisticWare.Ph4ct3x.Tests.Anthropometrics</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tools\HolisticWare.Ph4ct3x.Tools.csproj">
+      <Project>{166EA8C1-8508-4BEB-A332-57B5A3CD0D94}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UnitTests\" />

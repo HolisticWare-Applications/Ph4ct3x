@@ -20,7 +20,7 @@ namespace HolisticWare.Ph4ct3x.Tests.Anthropometrics
 			set;
 		}
 
-		public double Height
+		public double WaistCircumference
 		{
 			get;
 			set;

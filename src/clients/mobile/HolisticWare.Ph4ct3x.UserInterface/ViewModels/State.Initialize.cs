@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+
+using HolisticWare.Ph4ct3x.Tests.Anthropometrics;
 
 namespace HolisticWare.Ph4ct3x
 {
@@ -60,6 +63,32 @@ namespace HolisticWare.Ph4ct3x
 
 			return users;			
 		}
+
+		string namespace_root = "HolisticWare.Ph4ct3x.UserInterface.";
+
+		public static Dictionary<string,string> menu_speed = new Dictionary<string,string>()
+		{
+			{ 
+				"Stopwatch", 
+				"HolisticWare.Ph4ct3x.UserInterface.PageTestsAnthropomorphicalBodyIndexes"
+			},
+			{ 
+				"Overtraining", 
+				"HolisticWare.Ph4ct3x.UserInterface.PageTestsAnthropomorphicalBodyIndexes"
+			},
+			{ 
+				"Body Indexes", 
+				"HolisticWare.Ph4ct3x.UserInterface.PageError"
+			},
+		};
+
+
+		public static ObservableCollection<BodyIndexBase> body_indexes = 
+		new ObservableCollection<BodyIndexBase>()
+		{
+		};
+
+
 	}
 }
 

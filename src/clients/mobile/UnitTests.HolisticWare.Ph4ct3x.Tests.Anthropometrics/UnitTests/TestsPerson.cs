@@ -14,7 +14,10 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics
 		{
 			person =  new Person()
 			{
-			  
+				NameFirstGiven = "ood-loo"
+			,	NameSecondFamily = "chaknoot"
+			,	DateOfBirth = new DateTime(1968,9,24)
+			,	Gender = global::HolisticWare.Ph4ct3x.Gender.Female
 			};
 
 			return;
@@ -27,30 +30,19 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics
 		}
 
 		[Test]
-		public void Pass ()
+		public void Age ()
 		{
-			Console.WriteLine ("test1");
-			Assert.True (true);
+			double age = person.AgeinYears();
+
+			//Assert.Greater(age, 46);
+
+			TimeSpan ts_age = person.Age();
+
+			//Assert.Greater(ts_age, new TimeSpan(46 * 365, 0, 0));
+
+			return;
 		}
 
-		[Test]
-		public void Fail ()
-		{
-			Assert.False (true);
-		}
-
-		[Test]
-		[Ignore ("another time")]
-		public void Ignore ()
-		{
-			Assert.True (false);
-		}
-
-		[Test]
-		public void Inconclusive ()
-		{
-			Assert.Inconclusive ("Inconclusive");
-		}
 	}
 }
 

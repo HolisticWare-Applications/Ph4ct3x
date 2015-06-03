@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -15,6 +15,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>UnitTests.UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics.XamarinAndroid</AssemblyName>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,14 +45,26 @@
     <Reference Include="Xamarin.Android.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyMassIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyMassIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesPonderalIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesPonderalIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsPerson.cs">
+      <Link>UnitTests\TestsPerson.cs</Link>
+    </Compile>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="TestsSample.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
@@ -61,4 +74,14 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tests.Anthropometrics\HolisticWare.Ph4ct3x.Tests.Anthropometrics.csproj">
+      <Project>{1C704FB5-45D9-482D-A857-A69BA949C0AD}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tests.Anthropometrics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tools\HolisticWare.Ph4ct3x.Tools.csproj">
+      <Project>{166EA8C1-8508-4BEB-A332-57B5A3CD0D94}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

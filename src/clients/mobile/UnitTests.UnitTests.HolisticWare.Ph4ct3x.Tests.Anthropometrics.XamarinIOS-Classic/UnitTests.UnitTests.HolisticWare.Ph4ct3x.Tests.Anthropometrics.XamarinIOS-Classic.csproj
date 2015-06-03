@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>UnitTests.UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics.XamarinIOSClassic</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>UnitTests.UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics.XamarinIOS-Classic</AssemblyName>
+    <AssemblyName>UnitTestsUnitTestsHolisticWarePh4ct3xTestsAnthropometricsXamarinIOSClassic</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +75,18 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyMassIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyMassIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesPonderalIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesPonderalIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsPerson.cs">
+      <Link>UnitTests\TestsPerson.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="UnitTestAppDelegate.cs" />
   </ItemGroup>

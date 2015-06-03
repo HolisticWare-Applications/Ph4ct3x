@@ -30,6 +30,8 @@ namespace UIAcceptanceTest.HolisticWare.Ph4ct3x
 		{
 			app.Screenshot ("First screen.");
 
+			app.Flash(c => c.Marked("About"));;
+
 			return;
 		}
 	}

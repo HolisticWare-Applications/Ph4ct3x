@@ -25,13 +25,27 @@
 		*	read intro
 		*	tree
 		*	app.Query();
+			*	app.Query();
+				iOS
+				app.Query(c => c.Class("UILabel");
+				AppResult[] result = app.Query(c => c.Class("UILabel"));
 		*	app.Tap();
 		*	app.Flash();
 		*	copy
 	
-##
+### Xamarin Test Cloud
 
-### Xamarin Insoghts
+*	[https://testcloud.xamarin.com/](https://testcloud.xamarin.com/)
+	Invitation
+*	[https://youtu.be/PQMBCoVIABI?t=3443}(https://youtu.be/PQMBCoVIABI?t=3443)
+
+
+## Monitoring - Xamarin Insights
+
+### Installation
+
+*	project type
+	*
 
 	get-Project HolisticWare.Ph4ct3x.* | Install-Package Xamarin.Insights
 

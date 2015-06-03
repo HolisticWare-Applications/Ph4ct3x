@@ -17,10 +17,12 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics
 		{
 			person =  new Person()
 			{
-				NameFirstGiven = "aaaolooo"
-			,	NameSecondFamily = "mamoyebach"
-			,	DateOfBirth = new DateTime(1968,9,24)
+				NameFirstGiven = "ood-loo"
+			,	NameSecondFamily = "chaknoot"
 			,	Gender = global::HolisticWare.Ph4ct3x.Gender.Female
+			,	Weight = 93.0
+			, 	Height = 180
+			,	WaistCircumference = 100
 			};
 
 			return;
@@ -33,18 +35,12 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics
 		}
 
 		[Test]
-		public void Age ()
+		public void BodymassIndex ()
 		{
-			double age = person.AgeinYears();
-
-			Assert.Greater(age, 46);
-
-			TimeSpan ts_age = person.Age();
-
-			Assert.Greater(ts_age, new TimeSpan(46 * 365, 0, 0));
 
 			return;
 		}
+
 
 	}
 }

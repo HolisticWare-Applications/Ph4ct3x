@@ -3,6 +3,7 @@
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="HolisticWare.Ph4ct3x.UserInterface.UserControlViewMainMenu"
+    xmlns:local="clr-namespace:HolisticWare.Ph4ct3x;assembly=HolisticWare.Ph4ct3x.UserInterface"
 	>
 	<ContentView.Content>
     	<Grid
@@ -85,7 +86,34 @@
 				>
 			</Button>
 
+			<Label
+				Grid.Row="5" Grid.Column="0"
+				Text="User:"
+				>
+			</Label>
+			<ListView 
+				x:Name="listViewMenuSpeed"
+		    	Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4"
+				ItemsSource="{x:Static local:State.MenuSpeed}"
+				ItemTapped="listViewMenuSpeed_OnItemSelected"
+				>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<TextCell 
+							Text="{Binding Key}"
+							Detail="{Binding Value}"
+							>
+						</TextCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+
     	</Grid>
+
+
+
+
+
     	<!--
 	    <StackLayout>
 	    -->

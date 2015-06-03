@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+
+using HolisticWare.Ph4ct3x.Tests.Anthropometrics;
 
 namespace HolisticWare.Ph4ct3x
 {
@@ -27,6 +30,31 @@ namespace HolisticWare.Ph4ct3x
 		{
 			get;
 			set;
+		}
+
+
+		public static Dictionary<string,string> MenuSpeed
+		{
+			get
+			{
+				return menu_speed;
+			}
+			set
+			{
+				menu_speed = value;
+			}
+		}
+
+		public static ObservableCollection<BodyIndexBase> BodyIndexes
+		{
+			get
+			{
+				return body_indexes;
+			}
+			set
+			{
+				body_indexes = value;
+			}
 		}
 	}
 }

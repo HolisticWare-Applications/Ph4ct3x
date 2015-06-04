@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{68EA0CE7-A6F7-4BDB-A924-7676C82388F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnitTests.UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics.XamarinAndroid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>UnitTests.UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics.XamarinAndroid</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.NUnitLite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesBodyMassIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesBodyMassIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsBodyIndexesPonderalIndex.cs">
+      <Link>UnitTests\TestsBodyIndexesPonderalIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics\UnitTests\TestsPerson.cs">
+      <Link>UnitTests\TestsPerson.cs</Link>
+    </Compile>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tests.Anthropometrics\HolisticWare.Ph4ct3x.Tests.Anthropometrics.csproj">
+      <Project>{1C704FB5-45D9-482D-A857-A69BA949C0AD}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tests.Anthropometrics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tools\HolisticWare.Ph4ct3x.Tools.csproj">
+      <Project>{166EA8C1-8508-4BEB-A332-57B5A3CD0D94}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

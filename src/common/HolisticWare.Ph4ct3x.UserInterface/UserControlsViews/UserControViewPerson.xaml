@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="HolisticWare.Ph4ct3x.UserInterface.UserControViewPerson"
+	>
+	<ContentView.Content>
+		<Grid
+			>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="2*" />
+			</Grid.ColumnDefinitions>	
+
+			<Label
+				Grid.Row="0" Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				Text="User Data"
+				>
+			</Label>
+
+			<Label
+				x:Name="labelPersonnNmeFirst"
+				Grid.Row="1" Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				Text="Name First:"
+				>
+			</Label>
+			<Entry
+				x:Name="editPersonnNmeFirst"
+				Grid.Row="0" Grid.Column="1"
+				HorizontalOptions="FillAndExpand"
+				>
+			</Entry>
+
+			<Label
+				x:Name="labelPersonNameLast"
+				Grid.Row="0" Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				Text="Name First:"
+				>
+			</Label>
+			<Entry
+				x:Name="editPersonnameFirst"
+				Grid.Row="0" Grid.Column="1"
+				HorizontalOptions="FillAndExpand"
+				>
+			</Entry>
+
+		</Grid>
+	</ContentView.Content>
+</ContentView>

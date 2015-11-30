@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96CA55E3-5425-412A-A239-DAF3179170B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics</RootNamespace>
+    <AssemblyName>UnitTests.HolisticWare.Ph4ct3x.Tests.Anthropometrics</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UnitTests\TestsBodyIndexesPonderalIndex.cs" />
+    <Compile Include="UnitTests\TestsBodyIndexesBodyAdiposityIndex.cs" />
+    <Compile Include="UnitTests\TestsBodyIndexesBodyMassIndex.cs" />
+    <Compile Include="UnitTests\TestsPerson.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tests.Anthropometrics\HolisticWare.Ph4ct3x.Tests.Anthropometrics.csproj">
+      <Project>{1C704FB5-45D9-482D-A857-A69BA949C0AD}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tests.Anthropometrics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Tools\HolisticWare.Ph4ct3x.Tools.csproj">
+      <Project>{166EA8C1-8508-4BEB-A332-57B5A3CD0D94}</Project>
+      <Name>HolisticWare.Ph4ct3x.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
+  </ItemGroup>
+</Project>

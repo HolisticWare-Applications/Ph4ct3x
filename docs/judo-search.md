@@ -1,5 +1,9 @@
 # Data Scraping - Judo
 
+## EJU
+
+*   http://www.eju.net/?action=settingsfile&id=515&file=b965f8ceb4e89896b6adaec432adfde6&portalId=77
+
 ## IJF 
 
 *   https://www.ijf.org/

@@ -139,7 +139,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\HolisticWare.Ph4ct3x.Judo\HolisticWare.Ph4ct3x.Judo.csproj">
-      <Project>{8F98D45E-1694-4DD3-9157-C26E39FB90E0}</Project>
+      <Project>{144CFA2B-1AAF-444E-A378-46A355BE134A}</Project>
       <Name>HolisticWare.Ph4ct3x.Judo</Name>
     </ProjectReference>
   </ItemGroup>

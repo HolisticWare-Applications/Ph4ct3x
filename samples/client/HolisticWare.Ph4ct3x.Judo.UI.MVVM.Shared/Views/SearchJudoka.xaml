@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:v="clr-namespace:HolisticWare.Ph4ct3x.Judo.Views"
+    x:Class="HolisticWare.Ph4ct3x.Judo.Views.SearchJudoka"
+    >
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry
+                x:Name="entryNameJudoka" Placeholder="Judoka Name"
+                >                    
+            </Entry>
+            <Entry
+                x:Name="entryGender" Placeholder="Gender = { f, m, both }"
+                >                    
+            </Entry>
+            <Entry
+                x:Name="entryCountry" Placeholder="Country = {CRO, TUR, ...}"
+                >                    
+            </Entry>
+            <Button
+                x:Name="buttonSearchJudoka"
+                Text="Search Judoka"
+                >                    
+            </Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

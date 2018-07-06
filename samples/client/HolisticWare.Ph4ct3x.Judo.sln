@@ -5,13 +5,17 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.HolisticWare.Ph4ct3x.Judo.MobileAppService", "Azure.HolisticWare.Ph4ct3x.Judo.MobileAppService\Azure.HolisticWare.Ph4ct3x.Judo.MobileAppService.csproj", "{23DE12C2-2CCD-4E3B-AFDF-C4DAC35789CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo.Android", "HolisticWare.Ph4ct3x.Judo.Android\HolisticWare.Ph4ct3x.Judo.Android.csproj", "{4EDAA52C-1034-43B1-82CE-F6A4F4A0F6A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo.App.Android", "HolisticWare.Ph4ct3x.Judo.App.Android\HolisticWare.Ph4ct3x.Judo.App.Android.csproj", "{4EDAA52C-1034-43B1-82CE-F6A4F4A0F6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo.iOS", "HolisticWare.Ph4ct3x.Judo.iOS\HolisticWare.Ph4ct3x.Judo.iOS.csproj", "{97179D6E-2423-4CD0-8EB3-206199FC22C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo..App.iOS", "HolisticWare.Ph4ct3x.Judo.App.iOS\HolisticWare.Ph4ct3x.Judo.App.iOS.csproj", "{97179D6E-2423-4CD0-8EB3-206199FC22C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo.UWP", "HolisticWare.Ph4ct3x.Judo.UWP\HolisticWare.Ph4ct3x.Judo.UWP.csproj", "{04A34CA8-DF26-41B8-A42B-94C7980F8A29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo.App.UWP", "HolisticWare.Ph4ct3x.Judo.App.UWP\HolisticWare.Ph4ct3x.Judo.App.UWP.csproj", "{04A34CA8-DF26-41B8-A42B-94C7980F8A29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Judo", "HolisticWare.Ph4ct3x.Judo\HolisticWare.Ph4ct3x.Judo.csproj", "{144CFA2B-1AAF-444E-A378-46A355BE134A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{C794C6F0-89C2-448B-A863-39B0C6D3FE2C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared", "HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared\HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared.shproj", "{D6224487-8D0D-48B1-BF8B-42AE63C931E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

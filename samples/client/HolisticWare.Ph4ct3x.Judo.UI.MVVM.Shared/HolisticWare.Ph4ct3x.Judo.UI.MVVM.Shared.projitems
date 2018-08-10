@@ -75,6 +75,7 @@
       <DependentUpon>..\..\HolisticWare.Ph4ct3x.Judo\Views\Views\SearchJudoka.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\NavigationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />

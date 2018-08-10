@@ -7,11 +7,17 @@ namespace HolisticWare.Ph4ct3x.Judo.Views
 {
     public partial class SearchJudoka : ContentPage
     {
+        partial void HookEvents();
+
         public SearchJudoka()
         {
             InitializeComponent();
 
+            HookEvents();
+
             buttonSearchJudoka.Clicked += ButtonSearchJudoka_Clicked;
+
+            return;
         }
 
         void ButtonSearchJudoka_Clicked(object sender, EventArgs e)

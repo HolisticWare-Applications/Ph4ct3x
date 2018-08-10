@@ -9,5 +9,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.1.1" />
   </ItemGroup>
+  <Import Project="..\HolisticWare.Ph4ct3x.Judo.UI.CodeBehind.Shared\HolisticWare.Ph4ct3x.Judo.UI.CodeBehind.Shared.projitems" Label="Shared" Condition="Exists('..\HolisticWare.Ph4ct3x.Judo.UI.CodeBehind.Shared\HolisticWare.Ph4ct3x.Judo.UI.CodeBehind.Shared.projitems')" />
   <Import Project="..\HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared\HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared.projitems" Label="Shared" Condition="Exists('..\HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared\HolisticWare.Ph4ct3x.Judo.UI.MVVM.Shared.projitems')" />
 </Project>

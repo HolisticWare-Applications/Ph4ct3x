@@ -3,6 +3,8 @@ using System.Windows.Input;
 
 using Xamarin.Forms;
 
+using HolisticWare.Xamarin.Forms.Services;
+
 using HolisticWare.Ph4ct3x.Judo.Views;
 
 namespace HolisticWare.Ph4ct3x.Judo.ViewModels
@@ -17,9 +19,7 @@ namespace HolisticWare.Ph4ct3x.Judo.ViewModels
             //Navigation = 
             OpenSearchPageCommand = new Command
                 (
-                    async () => 
-                    Device.OpenUri(new Uri("https://xamarin.com/platform"))
-                    //await Application.Current.MainPage.Navigation.PushAsync(new SearchJudoka())
+                    async () => await NavigationService.Instance.PushPageSearchJudo()
                 );
         }
 

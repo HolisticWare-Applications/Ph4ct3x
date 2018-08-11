@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace HolisticWare.Ph4ct3x.Judo.Droid
+namespace HolisticWare.Ph4ct3x.Judo.Apps.Droid
 {
     [Activity(Label = "HolisticWare.Ph4ct3x.Judo", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace HolisticWare.Ph4ct3x.Judo.iOS
+namespace HolisticWare.Ph4ct3x.Judo.Apps..iOS
 {
     public class Application
     {

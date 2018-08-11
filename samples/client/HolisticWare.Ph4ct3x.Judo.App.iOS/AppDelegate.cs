@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace HolisticWare.Ph4ct3x.Judo.iOS
+namespace HolisticWare.Ph4ct3x.Judo.Apps..iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

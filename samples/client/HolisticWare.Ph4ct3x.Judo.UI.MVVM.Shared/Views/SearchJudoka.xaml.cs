@@ -29,7 +29,6 @@ namespace HolisticWare.Ph4ct3x.Judo.Views
             // https://www.ijf.org/judoka?name=Cvjetko&nation=CRO&gender=both&category=cad
             // https://www.ijf.org/judoka?name=bozkurt&nation=all&gender=f&category=all
 
-
             return;
         }
 

@@ -1,7 +1,0 @@
-{
-    "dependencies": {
-        "Microsoft.AspNet.Hosting": "1.0.0-*",
-        "Microsoft.AspNet.Owin": "1.0.0-*",
-        "Nowin": ""
-    }
-}

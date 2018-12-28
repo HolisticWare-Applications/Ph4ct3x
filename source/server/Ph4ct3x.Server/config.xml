@@ -1,8 +1,0 @@
-﻿<config>
-	<!--
-	http://gunnarpeipman.com/2014/11/asp-net-5-new-configuration-files-and-containers/
-	-->
-    <ConnectionStrings>
-        <XmlConnectionString>xml connection string</XmlConnectionString>
-    </ConnectionStrings>
-</config>

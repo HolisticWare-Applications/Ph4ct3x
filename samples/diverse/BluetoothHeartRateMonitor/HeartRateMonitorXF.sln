@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartRateMonitor", "HeartRateMonitor.Core\HeartRateMonitor.csproj", "{A1E14BEA-A9D9-46C5-83AA-8891A13E4837}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRM", "HRM.Core\HRM.csproj", "{A1E14BEA-A9D9-46C5-83AA-8891A13E4837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartRateMonitor.iOS", "HeartRateMonitor.iOS\HeartRateMonitor.iOS.csproj", "{5A951FB6-FD2D-41E3-BE9F-45DC8C238193}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRM.iOS", "HRM.iOS\HRM.iOS.csproj", "{5A951FB6-FD2D-41E3-BE9F-45DC8C238193}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartRateMonitor.Droid", "HeartRateMonitor.Droid\HeartRateMonitor.Droid.csproj", "{99B2DFE6-0DC5-403C-9653-58F13765F0B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRM.Droid", "HRM.Droid\HRM.Droid.csproj", "{99B2DFE6-0DC5-403C-9653-58F13765F0B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "externals", "externals", "{F5A433AC-DBCF-4ABD-8E8A-7CDEADF5273E}"
 EndProject

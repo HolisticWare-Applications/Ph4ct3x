@@ -95,6 +95,14 @@
       <Project>{A70F0DDC-677B-46DB-AE54-D38ACF89861F}</Project>
       <Name>HeartRateMonitor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\externals\submodules\Monkey.BluetoothLE\Source\Monkey.BluetoothLE.Core\Monkey.BluetoothLE.Core.csproj">
+      <Project>{65733427-B647-4556-A87C-20937496780A}</Project>
+      <Name>Monkey.BluetoothLE.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\externals\submodules\Monkey.BluetoothLE\Source\Monkey.BluetoothLE.Droid\Monkey.BluetoothLE.Droid.csproj">
+      <Project>{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}</Project>
+      <Name>Monkey.BluetoothLE.Droid</Name>
+    </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

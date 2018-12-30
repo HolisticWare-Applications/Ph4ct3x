@@ -12,4 +12,11 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\externals\submodules\Monkey.BluetoothLE\Source\Monkey.BluetoothLE.Core\Monkey.BluetoothLE.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
 </Project>

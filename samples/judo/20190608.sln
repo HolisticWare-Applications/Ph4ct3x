@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Ph4ct3x.Sports.Judo", "HolisticWare.Ph4ct3x.Sports.Judo\HolisticWare.Ph4ct3x.Sports.Judo.csproj", "{7DC9A4B8-29C6-42A1-AEEE-F57A54D5ABA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit", "UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit\UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit.csproj", "{2426ED8A-60F8-4B47-996F-B8A43CA77460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,5 +65,9 @@ Global
 		{7DC9A4B8-29C6-42A1-AEEE-F57A54D5ABA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC9A4B8-29C6-42A1-AEEE-F57A54D5ABA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC9A4B8-29C6-42A1-AEEE-F57A54D5ABA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2426ED8A-60F8-4B47-996F-B8A43CA77460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2426ED8A-60F8-4B47-996F-B8A43CA77460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2426ED8A-60F8-4B47-996F-B8A43CA77460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2426ED8A-60F8-4B47-996F-B8A43CA77460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

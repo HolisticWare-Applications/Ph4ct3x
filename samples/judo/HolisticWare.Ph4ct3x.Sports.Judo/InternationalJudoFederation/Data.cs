@@ -17,39 +17,109 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
 
         public Data()
         {
-            url_search_general = $"{url}/api/get_json?params[q]={search_term}&params[action]=general.search_all";
-            url_search_module = $"{url}/api/get_json?params[q]={search_term}&&params[module]={module}&params[action]=general.search_all";
 
             return;
         }
 
-        public async Task<string> GetDataSearchGeneral(string search)
+        public async Task<string> GetDataSearchGeneral
+                                            (
+                                                string search
+                                            )
         {
             search_term = search;
 
-            // ... Target page.
-            string page = url_search_general;
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                        (
+                                            $"{url}/api/get_json",
+                                            $"?",
+                                            $"params[q]={search_term}",
+                                            $"&",
+                                            $"params[action]=general.search_all"
+                                        );
             string result = null;
 
-            // ... Use HttpClient.
-            // using (HttpClient client = new HttpClient())
-            using (HttpResponseMessage response = await client.GetAsync(page))
-            using (HttpContent content = response.Content)
-            {
-                // ... Read the string.
-                result = await content.ReadAsStringAsync();
-            }
+            result = await GetDataAsync(page);
 
             return result;
         }
 
         
-        public async Task<string> GetDataSearchCountry(string country)
+        public async Task<string> GetDataSearchCountry
+                                            (
+                                                string country
+                                            )
         {
             search_term = country;
             module = "country";
-            string page = url_search_general;
 
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[q]={search_term}",
+                                        $"&",
+                                        $"params[module]={module}",
+                                        $"&",
+                                        $"params[action]=general.search_all"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+        public async Task<string> GetDataSearchCompetitionRanks
+                                            (
+                                            )
+        {
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=competition.all_categories"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+        public async Task<string> GetDataSearchCompetition
+                                            (
+                                                int year,
+                                                int month,
+                                                string rank_group = ""
+                                            )
+        {
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=competition.get_list",
+                                        $"&",
+                                        $"params[q]={search_term}",
+                                        $"&",
+                                        $"params[rank_group]={rank_group}",
+                                        $"&",
+                                        $"params[year]={year}",
+                                        $"&",
+                                        $"params[month]={month}"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+        private static async Task<string> GetDataAsync(string page)
+        {
             string result = null;
 
             // ... Use HttpClient.

@@ -11,9 +11,25 @@ namespace ConsoleApplication
 
             data = new HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
 
-            string general = data.GetDataSearchGeneral("kristo").Result;
+            string general = null;
 
-            string country = data.GetDataSearchGeneral("croatia").Result;
+            general = data.GetDataSearchGeneral("kristo").Result;
+
+            general = data.GetDataSearchGeneral("cvjetko").Result;
+
+            string country = null;
+
+            country = data.GetDataSearchCountry("croatia").Result;
+
+            country = data.GetDataSearchCountry("japan").Result;
+
+            string countries = null;
+
+            countries = data.GetDataCountries().Result;
+
+            string competition = null;
+
+            competition = data.GetDataSearchCompetition(2019, 6).Result;
 
             return;
         }

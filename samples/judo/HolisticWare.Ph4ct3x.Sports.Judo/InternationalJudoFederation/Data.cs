@@ -71,6 +71,28 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
             return result;
         }
 
+        // https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=country.get_list&params%5B__ust%5D=
+        public async Task<string> GetDataCountries
+                                            (
+                                            )
+        {
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=country.get_list"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+        // https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
+
+
         public async Task<string> GetDataSearchCompetitionRanks
                                             (
                                             )

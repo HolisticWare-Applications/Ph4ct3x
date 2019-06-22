@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceAssemblyReference>true</ProduceAssemblyReference>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.169046-pre5" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\HolisticWare.Ph4ct3x.UI.netstandard\HolisticWare.Ph4ct3x.UI.netstandard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ContentViewMorphological.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ContentViewMorphological.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Import Project="..\..\UI\HolisticWare.Ph4ct3x.UI\HolisticWare.Ph4ct3x.UI.projitems" Label="Shared" />
+</Project>

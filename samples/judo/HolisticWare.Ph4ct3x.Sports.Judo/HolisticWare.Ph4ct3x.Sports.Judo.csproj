@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="InternationalJudoFederation\" />
+    <Folder Include="externals\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />

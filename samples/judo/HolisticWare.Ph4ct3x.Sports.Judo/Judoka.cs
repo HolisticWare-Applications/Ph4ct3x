@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HolisticWare.Ph4ct3x.Sports.Judo
 {
-    public class Judoka : Person
+    public class Judoka : Athlete
     {
         public Judoka()
         {

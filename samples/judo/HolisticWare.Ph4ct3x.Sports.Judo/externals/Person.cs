@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HolisticWare.Ph4ct3x.Sports.Judo
+namespace HolisticWare.Ph4ct3x
 {
     public class Person
     {

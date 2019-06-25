@@ -2,6 +2,10 @@ using System;
 using System.IO;
 using Xunit;
 
+using Newtonsoft.Json;
+
+using HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Internal;
+
 namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 {
     public class UnitTest1
@@ -14,6 +18,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         [InlineData("oberan")]
         [InlineData("croatia")]
         [InlineData("island")]
+        [InlineData("iceland")]
         [Theory]
         public void TestData_Search_General_01(string search)
         {
@@ -31,6 +36,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 
         [InlineData("croatia")]
         [InlineData("island")]
+        [InlineData("iceland")]
         [Theory]
         public void TestData_Search_Country_01(string search)
         {
@@ -74,6 +80,8 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
             result = data.GetDataSearchCompetitionRanks().Result;
 
             File.WriteAllText($"./ijf_data_competition_ranks.json", result);
+
+            Categories c = JsonConvert.DeserializeObject<Categories>(result);
 
             return;
         }

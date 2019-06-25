@@ -7,11 +7,13 @@
   <ItemGroup>
     <Folder Include="InternationalJudoFederation\" />
     <Folder Include="externals\" />
+    <Folder Include="InternationalJudoFederation\Internal\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 </Project>

@@ -8,7 +8,7 @@ using HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Internal;
 
 namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 {
-    public class UnitTest1
+    public class UnitTest_InternationalJudoFederation_Data
     {
         global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data data = null;
 

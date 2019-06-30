@@ -66,6 +66,13 @@ Search Textbox Autocomplete:
 
 *   Zagreb
 
+## Categories
+
+*   url
+
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
+
+    *   https://data.ijf.org/api/get_json?params[action]=competition.all_categories
 
 ## Athlete
 
@@ -75,8 +82,11 @@ Search Textbox Autocomplete:
 
 *   https://judobase.ijf.org/#/competitor/profile/29418
 
-
 ## Country
+
+*   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=country.get_list&params%5B__ust%5D=
+
+*   https://data.ijf.org/api/get_json?params[action]=country.get_list
 
 *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=country.get_list&params%5B__ust%5D=
 
@@ -87,11 +97,19 @@ Search Textbox Autocomplete:
 
 ## Competition
 
-*   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
+*   url
 
-*   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&params%5B__ust%5D=&params%5Byear%5D=2019&params%5Bmonth%5D=&params%5Brank_group%5D=&params%5Bsort%5D=-1
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories
 
-*   https://judobase.ijf.org/#/competition/profile/1815
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&params%5Byear%5D=2019&params%5Bmonth%5D=&params%5Brank_group%5D=&params%5Bsort%5D=-1
+
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&params%5Byear%5D=2019&params%5Bmonth%5D=&params%5Brank_group%5D=
+
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&&params%5Byear%5D=&params%5Bmonth%5D=&params%5Brank_group%5D=cont_champ&params%5Bsort%5D=-1
+
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&&params%5Byear%5D=&params%5Bmonth%5D=&params%5Brank_group%5D=cont_champ&params%5Bsort%5D=-1
+
+    *   https://judobase.ijf.org/#/competition/profile/1815
 
 ## Ranking
 

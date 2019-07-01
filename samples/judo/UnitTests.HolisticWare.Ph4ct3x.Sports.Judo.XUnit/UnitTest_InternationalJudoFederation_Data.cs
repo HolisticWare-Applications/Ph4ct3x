@@ -85,5 +85,27 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 
             return;
         }
+
+        [InlineData("zagreb")]
+        [InlineData("cvjetko")]
+        [InlineData("bela")]
+        [InlineData("che")]
+        [InlineData("croatia")]
+        [Theory]
+        public void TestData_Search_GetAll(string search_query)
+        {
+
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+
+            string result = null;
+
+            result = data.GetDataSearchGenerallSearchAll(search_query).Result;
+
+            File.WriteAllText($"./ijf_data_search_all_{search_query}.json", result);
+
+            Categories c = JsonConvert.DeserializeObject<Categories>(result);
+
+            return;
+        }
     }
 }

@@ -93,6 +93,53 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
         // https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
 
 
+        public async Task<string> GetDataSearchGenerallSearchAll
+                                            (
+                                                string search_query
+                                            )
+        {
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=general.search_all",
+                                        "&",
+                                        $"params[g]={search_query}"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+
+        }
+
+        public async Task<string> GetDataSearchGenerallGetOne
+                                            (
+                                                string module,
+                                                string search_query
+                                            )
+        {
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=general.get_one",
+                                        "&",
+                                        $"params[g]={search_query}",
+                                        "&",
+                                        $"params[module]={module}"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+
+        }
+
         public async Task<string> GetDataSearchCompetitionRanks
                                             (
                                             )

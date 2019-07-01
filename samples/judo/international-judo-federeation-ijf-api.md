@@ -54,17 +54,41 @@ https://judobase.ijf.org/#/dashboard
 
 Search Textbox Autocomplete:
 
+
+## General
+
+### `general.search_all`
+
 *   url 
 
-    *   `https://data.ijf.org/api/get_json?access_token=&params%5Bq%5D=fe&params%5Baction%5D=general.search_all`
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Bq%5D=fe&params%5Baction%5D=general.search_all
 
-    *   `https://data.ijf.org/api/get_json?access_token=&params[q]={search}}&params[action]=general.search_all`
+        *   https://data.ijf.org/api/get_json?params%5Bq%5D=to&params%5Baction%5D=general.search_all
 
-        *   `https://data.ijf.org/api/get_json?access_token=&params[q]=cvjetko&params[action]=general.search_all`
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]={search}}
 
-        *   `https://data.ijf.org/api/get_json?access_token=&params[q]=kristo&params[action]=general.search_all`
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=cvjetko
 
-*   Zagreb
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=kristo
+
+
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=kristo
+
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=cvjetko
+
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=zagreb
+
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=bela
+
+        *   https://data.ijf.org/api/get_json?params[action]=general.search_all&params[q]=che
+
+### `general.get_one`
+
+https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=general.get_one&params%5B__ust%5D=&params%5Bmodule%5D=competitor&params%5Bid%5D=1336
+
+https://data.ijf.org/api/get_json?params[action]=general.get_one&params[module]=competitor&params[id]=1336
+
+https://data.ijf.org/api/get_json?params[action]=general.get_one&params[module]=country&params[id]=1336
 
 ## Categories
 
@@ -76,13 +100,13 @@ Search Textbox Autocomplete:
 
 ## Athlete
 
-*   https://data.ijf.org/api/get_json?params[q]=kristo&params[action]=general.search_all
 
-*   https://data.ijf.org/api/get_json?params%5Bq%5D=to&params%5Baction%5D=general.search_all
 
 *   https://judobase.ijf.org/#/competitor/profile/29418
 
 ## Country
+
+### `country.get_list`
 
 *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=country.get_list&params%5B__ust%5D=
 
@@ -97,9 +121,27 @@ Search Textbox Autocomplete:
 
 ## Competition
 
+### Categories
+
 *   url
 
-    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
+    
+    *   https://data.ijf.org/api/get_json?params%5Baction%5D=competition.all_categories
+
+    *   https://data.ijf.org/api/get_json?params[action]=competition.all_categories
+
+### Competitions by Year/Month
+
+*   url
+
+    *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&params%5B__ust%5D=&params%5Byear%5D=&params%5Bmonth%5D=&params%5Brank_group%5D=&params%5Bsort%5D=-1
+
+    *   https://data.ijf.org/api/get_json?params[action]=competition.get_list&params[year]=&params[month]=&params[rank_group]=
+
+    *   https://data.ijf.org/api/get_json?params[action]=competition.get_list&params[year]=&params[month]=&params[rank_group]=cont_champ
+
+    *   https://data.ijf.org/api/get_json?params[action]=competition.get_list&params[year]=2019&params[month]=6&params[rank_group]=cont_champ
 
     *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.get_list&params%5Byear%5D=2019&params%5Bmonth%5D=&params%5Brank_group%5D=&params%5Bsort%5D=-1
 
@@ -111,11 +153,35 @@ Search Textbox Autocomplete:
 
     *   https://judobase.ijf.org/#/competition/profile/1815
 
+## Competitor 
+
+### `competitior.get_list`
+
+https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competitor.get_list&params%5B__ust%5D=&params%5Bweight%5D=&params%5Bcountry%5D=&params%5Bq%5D=
+
+https://data.ijf.org/api/get_json?params[action]=competitor.get_list&params[weight]=&params[country]=&params[q]=tina
+
+https://data.ijf.org/api/get_json?params[action]=competitor.get_list&params[weight]=&params[country]=Slovenia&params[q]=
+
+### `competitior.get_info`
+
+*   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competitor.info&params%5B__ust%5D=&params%5Bid_person%5D=1336
+
+*   https://data.ijf.org/api/get_json?params[action]=competitor.info&params[id_person]=1336
+
+### `competitor.wrl_current`
+
+https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competitor.wrl_current&params%5Bid_person%5D=1336
+
+https://data.ijf.org/api/get_json?params[action]=competitor.wrl_current&params[id_person]=1336
+
 ## Ranking
 
 *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=general.ranks&params%5B__ust%5D=
 
+*   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=general.ranks&params%5B__ust%5D=
 
+https://data.ijf.org/api/get_json?access_token=&params%5Bq%5D=ts&params%5Baction%5D=general.search_all
 ```
         // ... Target page.
         string page = "http://en.wikipedia.org/";

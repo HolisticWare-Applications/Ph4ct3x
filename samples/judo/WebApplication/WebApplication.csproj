@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Sports.Judo\HolisticWare.Ph4ct3x.Sports.Judo.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\IJF\" />
+  </ItemGroup>
 </Project>

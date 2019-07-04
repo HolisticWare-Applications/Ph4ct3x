@@ -94,7 +94,6 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         [Theory]
         public void TestData_Search_GetAll(string search_query)
         {
-
             data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
 
             string result = null;
@@ -103,7 +102,28 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 
             File.WriteAllText($"./ijf_data_search_all_{search_query}.json", result);
 
-            Categories c = JsonConvert.DeserializeObject<Categories>(result);
+            return;
+        }
+
+        [InlineData("competition", "zagreb")]
+        [InlineData("competitor", "cvjetko")]
+        [InlineData("competitor", "bela")]
+        [InlineData("competitor", "che")]
+        [InlineData("competiton", "che")]
+        [InlineData("country", "che")]
+        [InlineData("country", "croatia")]
+        [Theory]
+        public void TestData_Search_GetOne(string module, string search_query)
+        {
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+
+            string result = null;
+
+            result = data.GetDataSearchGenerallSearchAll(search_query).Result;
+
+            File.WriteAllText($"./ijf_data_search_one_module_{module}_guery_{search_query}.json", result);
+
+            SearchAllResult[] results_search_all = SearchAllResult.FromJson(result);
 
             return;
         }

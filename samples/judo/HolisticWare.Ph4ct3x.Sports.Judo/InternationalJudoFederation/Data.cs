@@ -105,7 +105,7 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
                                         $"?",
                                         $"params[action]=general.search_all",
                                         "&",
-                                        $"params[g]={search_query}"
+                                        $"params[q]={search_query}"
                                     );
             string result = null;
 
@@ -128,9 +128,9 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
                                         $"?",
                                         $"params[action]=general.get_one",
                                         "&",
-                                        $"params[g]={search_query}",
+                                        $"params[module]={module}",
                                         "&",
-                                        $"params[module]={module}"
+                                        $"params[q]={search_query}"
                                     );
             string result = null;
 

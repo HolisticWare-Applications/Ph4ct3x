@@ -28,24 +28,9 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Internal
 
     public partial class Categories
     {
-        public static Dictionary<string, Categories> FromJson(string json) => JsonConvert.DeserializeObject<Dictionary<string, Categories>>(json, Converter.Settings);
+        public static Dictionary<string, Categories> FromJson(string json)
+            =>
+            JsonConvert.DeserializeObject<Dictionary<string, Categories>>(json, Converter.Settings);
     }
 
-    public static class Serialize
-    {
-        public static string ToJson(this Dictionary<string, Categories> self) => JsonConvert.SerializeObject(self, Converter.Settings);
-    }
-
-    internal static class Converter
-    {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
-        {
-            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            Converters =
-            {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
-        };
-    }
 }

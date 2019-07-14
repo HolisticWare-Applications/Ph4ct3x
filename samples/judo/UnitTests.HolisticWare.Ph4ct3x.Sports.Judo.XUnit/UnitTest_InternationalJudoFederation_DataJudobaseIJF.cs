@@ -8,9 +8,9 @@ using HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Internal;
 
 namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
 {
-    public class UnitTest_InternationalJudoFederation_Data
+    public class UnitTest_InternationalJudoFederation_DataJudobaseIJF
     {
-        global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data data = null;
+        global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF data = null;
 
         [InlineData("cvjetko")]
         [InlineData("cvjetko lara")]
@@ -23,7 +23,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         public void TestData_Search_General_01(string search)
         {
 
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -41,7 +41,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         public void TestData_Search_Country_01(string search)
         {
 
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -58,7 +58,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         public void TestData_Search_Competition_01(int year, int month, string rank)
         {
 
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -69,11 +69,12 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
             return;
         }
 
+
         [Fact]
         public void TestData_Search_Competition_Ranks()
         {
 
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -94,7 +95,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         [Theory]
         public void TestData_Search_GetAll(string search_query)
         {
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -115,7 +116,7 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
         [Theory]
         public void TestData_Search_GetOne(string module, string search_query)
         {
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
 
             string result = null;
 
@@ -124,6 +125,22 @@ namespace UnitTests.HolisticWare.Ph4ct3x.Sports.Judo.XUnit
             File.WriteAllText($"./ijf_data_search_one_module_{module}_guery_{search_query}.json", result);
 
             SearchAllResult[] results_search_all = SearchAllResult.FromJson(result);
+
+            return;
+        }
+
+        [InlineData(11)]
+        [Theory]
+        public void TestData_Search_CompetitorByWeight(int id_weight)
+        {
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataJudobaseIJF();
+
+            string result = null;
+
+            result = data.GetDataSearchCompetitorByWeight(id_weight).Result;
+
+            File.WriteAllText($"./ijf_data_search_competitor_by_weight_{id_weight}.json", result);
+
 
             return;
         }

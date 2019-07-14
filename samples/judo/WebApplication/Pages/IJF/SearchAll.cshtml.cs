@@ -18,7 +18,7 @@ namespace WebApplication.Pages.IJF
             set;
         }
 
-        global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data data = null;
+        global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataWebIJF data = null;
 
         public void OnGet(string module, string search_query)
         {
@@ -37,7 +37,7 @@ namespace WebApplication.Pages.IJF
         public void SearchAll(string module, string search_query)
         {
 
-            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new global::HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataWebIJF();
 
             string result = null;
 

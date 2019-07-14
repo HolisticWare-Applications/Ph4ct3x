@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
 {
-    public class Data
+    public class DataJudobaseIJF
     {
         protected static HttpClient client = new HttpClient();
 
@@ -15,7 +15,7 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
         protected string url_search_general = null;
         protected string url_search_module = null;
 
-        public Data()
+        public DataJudobaseIJF()
         {
 
             return;
@@ -44,7 +44,7 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
             return result;
         }
 
-        
+
         public async Task<string> GetDataSearchCountry
                                             (
                                                 string country
@@ -179,6 +179,63 @@ namespace HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation
                                         $"params[year]={year}",
                                         $"&",
                                         $"params[month]={month}"
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+
+        public async Task<string> GetDataSearchCompetitorByWeight
+                                            (
+                                                int id_category_weight
+                                            )
+        {
+            //https://data.ijf.org/api/get_json?params[action]=competitor.get_list&params[weight]=11&params[country]=&params[q]=
+
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=competitor.get_list",
+                                        $"&",
+                                        $"params[weight]={id_category_weight}",
+                                        $"&",
+                                        $"params[country]=",
+                                        $"&",
+                                        $"params[q]="
+                                    );
+            string result = null;
+
+            result = await GetDataAsync(page);
+
+            return result;
+        }
+
+        public async Task<string> GetDataSearchCompetitorByWeightAndCountry
+                                            (
+                                                int id_category_weight,
+                                                int id_country,
+                                                string search_term = ""
+                                            )
+        {
+            //https://data.ijf.org/api/get_json?params[action]=competitor.get_list&params[weight]=11&params[country]=&params[q]=
+
+            // ... Target URL endpoint.
+            string page = string.Concat
+                                    (
+                                        $"{url}/api/get_json",
+                                        $"?",
+                                        $"params[action]=competitor.get_list",
+                                        $"&",
+                                        $"params[weight]={id_category_weight}",
+                                        $"&",
+                                        $"params[country]={id_country}",
+                                        $"&",
+                                        $"params[q]={search_term}"
                                     );
             string result = null;
 

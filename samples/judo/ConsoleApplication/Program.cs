@@ -7,9 +7,9 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data data = null;
+            HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataWebIJF data = null;
 
-            data = new HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.Data();
+            data = new HolisticWare.Ph4ct3x.Sports.Judo.InternationalJudoFederation.DataWebIJF();
 
             string general = null;
 

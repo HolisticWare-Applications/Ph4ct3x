@@ -38,12 +38,108 @@ preloads:
 
 ### Search
 
-https://www.ijf.org/search
+*   https://www.ijf.org/search
 
-https://www.ijf.org/search?q=&p=1
+*   https://www.ijf.org/search?q=&p=1
 
-https://www.ijf.org/search?q=cvjetko&p=1
+*   https://www.ijf.org/search?q=cvjetko&p=1
 
+*   https://www.ijf.org/search?group=&q=cvjetko
+
+*   Lara Cvjetko
+
+    *   `www.ijf.org`
+
+        https://www.ijf.org/judoka/29418/results?results_rank_group=all
+
+    *   `judobase.ijf.org`
+
+        https://judobase.ijf.org/#/competitor/profile/29418/results
+
+#### Calendar
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=all
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=world_tour
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=sen
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=jun
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=cad
+
+*   https://www.ijf.org/calendar?year=2019&month=&age=othr
+
+*   https://www.ijf.org/calendar?year=2019&month=1&age=othr
+
+#### Members
+
+*   https://www.ijf.org/countries
+
+*   https://www.ijf.org/countries/all/committee#select-dropdown
+
+*   https://www.ijf.org/judoka?name=&nation=CRO&gender=both&category=all
+
+*   https://www.ijf.org/judoka?name=&nation=CRO&gender=both&category=all
+
+*   https://www.ijf.org/judoka?name=&nation=CRO&gender=m&category=all
+
+*   https://www.ijf.org/judoka?name=&nation=CRO&gender=f&category=all
+
+*   https://www.ijf.org/judoka?name=&nation=CRO&gender=f&category=3
+
+```
+<select name="category" id="">
+<option value="all">All</option>
+<option value="sen">All Seniors</option>
+<option value="1">-60 kg</option>
+<option value="2">-66 kg</option>
+<option value="3" selected="">-73 kg</option>
+<option value="4">-81 kg</option>
+<option value="5">-90 kg</option>
+<option value="6">-100 kg</option>
+<option value="7">+100 kg</option>
+<option value="8">-48 kg</option>
+<option value="9">-52 kg</option>
+<option value="10">-57 kg</option>
+<option value="11">-63 kg</option>
+<option value="12">-70 kg</option>
+<option value="13">-78 kg</option>
+<option value="14">+78 kg</option>
+<option value="cad">All Cadets</option>
+<option value="60">-50 kg</option>
+<option value="61">-55 kg</option>
+<option value="62">-60 kg</option>
+<option value="63">-66 kg</option>
+<option value="64">-73 kg</option>
+<option value="65">-81 kg</option>
+<option value="66">-90 kg</option>
+<option value="67">+90 kg</option>
+<option value="68">-40 kg</option>
+<option value="69">-44 kg</option>
+<option value="70">-48 kg</option>
+<option value="71">-52 kg</option>
+<option value="72">-57 kg</option>
+<option value="73">-63 kg</option>
+<option value="74">-70 kg</option>
+<option value="75">+70 kg</option>
+<option value="jun">All Juniors</option>
+<option value="44">-60 kg</option>
+<option value="45">-66 kg</option>
+<option value="46">-73 kg</option>
+<option value="47">-81 kg</option>
+<option value="48">-90 kg</option>
+<option value="49">-100 kg</option>
+<option value="50">+100 kg</option>
+<option value="52">-48 kg</option>
+<option value="53">-52 kg</option>
+<option value="54">-57 kg</option>
+<option value="55">-63 kg</option>
+<option value="56">-70 kg</option>
+<option value="57">-78 kg</option>
+<option value="58">+78 kg</option>
+</select>
+```
 
 ### Everything
 
@@ -59,7 +155,7 @@ Search Textbox Autocomplete:
 
 ### `general.search_all`
 
-*   url 
+*   url
 
     *   https://data.ijf.org/api/get_json?access_token=&params%5Bq%5D=fe&params%5Baction%5D=general.search_all
 
@@ -126,7 +222,7 @@ https://data.ijf.org/api/get_json?params[action]=general.get_one&params[module]=
 *   url
 
     *   https://data.ijf.org/api/get_json?access_token=&params%5Baction%5D=competition.all_categories&params%5B__ust%5D=
-    
+
     *   https://data.ijf.org/api/get_json?params%5Baction%5D=competition.all_categories
 
     *   https://data.ijf.org/api/get_json?params[action]=competition.all_categories
@@ -153,7 +249,7 @@ https://data.ijf.org/api/get_json?params[action]=general.get_one&params[module]=
 
     *   https://judobase.ijf.org/#/competition/profile/1815
 
-## Competitor 
+## Competitor
 
 ### `competitior.get_list`
 

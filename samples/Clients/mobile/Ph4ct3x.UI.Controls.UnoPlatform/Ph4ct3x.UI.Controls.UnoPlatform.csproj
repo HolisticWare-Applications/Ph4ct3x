@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BlankPage1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="BlankPage1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Uno.Core" Version="1.29.0" />
+    <PackageReference Include="Uno.UI" Version="1.45.0" />
+  </ItemGroup>
+
+</Project>

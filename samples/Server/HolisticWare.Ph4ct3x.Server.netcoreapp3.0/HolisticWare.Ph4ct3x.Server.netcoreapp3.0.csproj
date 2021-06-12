@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>HolisticWare.Ph4ct3x.Server.netcoreapp3._0</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Clients\HolisticWare.Ph4ct3x.Server.ASPnet.UI.RazorPages.RazorClassLibrary.netcoreapp3.0\HolisticWare.Ph4ct3x.Server.ASPnet.UI.RazorPages.RazorClassLibrary.netcoreapp3.0.csproj" />
+  </ItemGroup>
+
+</Project>

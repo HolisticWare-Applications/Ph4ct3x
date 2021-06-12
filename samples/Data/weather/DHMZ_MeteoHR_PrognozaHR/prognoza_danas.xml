@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<VW version="1.1" creator="DHMZ-SVAP"> 
+	<metadata>
+		<datatime>311220</datatime>
+		<creationtime>Thu Dec 31 00:00:00 2020</creationtime>
+	</metadata> 
+	<section name="All">
+        <param name="datum" value="311220"/>	
+		<station name="sredisnja" lon="16.03" lat="45.82"> 
+			<param name="vrijeme" value="4" /> 
+			<param name="Tmn" value="3" /> 
+			<param name="Tmx" value="8" /> 
+			<param name="wind" value="6" />
+		</station> 
+		<station name="istocna" lon="18.63" lat="45.53"> 
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="4" /> 
+			<param name="Tmx" value="6" /> 
+			<param name="wind" value="8" />
+		</station> 
+		<station name="gorska" lon="15.37" lat="44.55"> 
+			<param name="vrijeme" value="4" /> 
+			<param name="Tmn" value="1" /> 
+			<param name="Tmx" value="4" /> 
+			<param name="wind" value="6" />
+		</station> 
+		<station name="unutrasnjost Dalmacije" lon="16.2" lat="44.03"> 
+			<param name="vrijeme" value="4" /> 
+			<param name="Tmn" value="5" /> 
+			<param name="Tmx" value="9" /> 
+			<param name="wind" value="1" />
+		</station> 
+		<station name="sjeverni Jadran" lon="14.58" lat="45.22"> 
+			<param name="vrijeme" value="4" /> 
+			<param name="Tmn" value="6" /> 
+			<param name="Tmx" value="10" /> 
+			<param name="wind" value="2" />
+		</station> 
+		<station name="srednji Jadran" lon="16.43" lat="43.17"> 
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="7" /> 
+			<param name="Tmx" value="13" /> 
+			<param name="wind" value="8" />
+		</station> 
+		<station name="juzni Jadran" lon="18.08" lat="42.65"> 
+			<param name="vrijeme" value="16" /> 
+			<param name="Tmn" value="10" /> 
+			<param name="Tmx" value="12" /> 
+			<param name="wind" value="8" />
+		</station> 
+		<param name="rh_text" value="U većini predjela djelomice sunčano uz promjenljivu naoblaku. Oblačno mjestimice s kišom zadržat će se u Slavoniji, Baranji i Srijemu, dok će u Dalmaciji još biti lokalnih pljuskova s grmljavinom. Vjetar slab do umjeren sjeverni i sjeverozapadni, a Jadranu umjerena do jaka bura i sjeverozapadnjak. Krajem dana u zapadnim predjelima te mjestimice i na sjevernom Jadranu okrenut će na jugozapadnjak. Najviša temperatura zraka uglavnom od 4 do 8, a na Jadranu između 10 i 13 °C."/>
+		<station name="Zagreb" lon="16.03" lat="45.82">
+			<param name="vrijeme" value="4" /> 
+			<param name="Tmn" value="5" /> 
+			<param name="Tmx" value="8" /> 
+			<param name="wind" value="6" />
+		</station>
+		<param name="zg_text" value="Djelomice sunčano uz promjenljivu naoblaku. Najviša temperatura zraka oko 8 °C. Tijekom noći mjestimice na širem gradskom području magla, a temperatura zraka bit će uglavnom od -2 od 0 °C."/>
+	</section>
+</VW>
+

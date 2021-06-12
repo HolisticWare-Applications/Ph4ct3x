@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ph4ct3x - Physical Activity Expert System";
+}
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+
+    <p>
+        NOTE: this is roadmap, but this will be decription of the app system (suite) in the future.
+    </p>
+    <p>        
+        Ph4ct3x is a software system (suite) used to record (log), analyse and plan (program) physical activity 
+        for anyone being physically active. This software is a result of personal needs of one geek intetested to
+        help out his kids fullfill their dreams.
+    </p>
+    <p>        
+        Ph4ct3x is written completely in modern state-of-the-art .NET (C#) and consists of client applications 
+        (desktop and mobile) and server side application for data storage and analysis, user[s] and team[s] collaboration,
+        activity planning (programming) etc. 
+    </p>
+    <p>                    
+        [<a asp-page="./Technology">Technology Details</a>]
+    <p>                                
+        Ph4ct3x implements several fields in Sports Theory through main functional modules:
+    </p>
+    <ul>
+        <li>
+            Data Acquisition Modules
+        </li>
+        <li>
+            Data Analysis Modules 
+            <ul>
+                <li>
+                    Tests for Physical Fitness Parameters
+                    <br/>
+                    (batteries of tests, sets of tests)
+                </li>
+                <li>
+                    Approximations of various Physical Fitness Parameters
+                </li>
+            </ul>
+        </li>
+        <li>
+            Planning (Programming) Modules
+        </li>
+    </ul>
+        
+    <ul>
+        <li>
+            <a asp-page="./DiagnosticTests/Index">Diagnostic Tests</a>
+            <ul>
+                <li>
+                    <a 
+                        asp-page="./DiagnosticTests/Morphological/Index"
+                        >
+                        Morphological
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        asp-page="./DiagnosticTests/Motorical/Index"
+                        >
+                        Motorical
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>                    
+        [<a asp-page="./Functionality">Functionality Details</a>]
+    <p>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<VW version="1.1" creator="DHMZ-SVAP"> 
+	<metadata>
+		<datatime>020621</datatime>
+		<creationtime>Wed Jun 02 00:00:00 2021</creationtime>
+	</metadata> 
+	<section name="All">
+        <param name="datum" value="030621"/>	
+		<station name="sredisnja" lon="16.03" lat="45.82"> 
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="11" /> 
+			<param name="Tmx" value="26" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="istocna" lon="18.63" lat="45.53"> 
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="10" /> 
+			<param name="Tmx" value="25" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="gorska" lon="15.37" lat="44.55"> 
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="8" /> 
+			<param name="Tmx" value="24" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="unutrasnjost Dalmacije" lon="16.2" lat="44.03"> 
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="10" /> 
+			<param name="Tmx" value="28" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="sjeverni Jadran" lon="14.58" lat="45.22"> 
+			<param name="vrijeme" value="1" /> 
+			<param name="Tmn" value="15" /> 
+			<param name="Tmx" value="26" /> 
+			<param name="wind" value="7" />
+		</station> 
+		<station name="srednji Jadran" lon="16.43" lat="43.17"> 
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="16" /> 
+			<param name="Tmx" value="26" /> 
+			<param name="wind" value="8" />
+		</station> 
+		<station name="juzni Jadran" lon="18.08" lat="42.65"> 
+			<param name="vrijeme" value="1" /> 
+			<param name="Tmn" value="17" /> 
+			<param name="Tmx" value="25" /> 
+			<param name="wind" value="8" />
+		</station> 
+		<param name="rh_text" value="Pretežno sunčano. Uz lokalno jači razvoj oblaka poslijepodne u gorskim krajevima te u unutrašnjosti Istre i Dalmacije mala vjerojatnost za poneki pljusak. Vjetar u unutrašnjosti slab. Na Jadranu ujutro burin, potom do umjeren sjeverozapadni i zapadni vjetar. Najniža temperatura na kopnu od 7 do 12, na Jadranu od 14 do 18, a najviša dnevna uglavnom između 23 i 28 °C."/>
+		<station name="Zagreb" lon="16.03" lat="45.82">
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="12" /> 
+			<param name="Tmx" value="26" /> 
+			<param name="wind" value="0" />
+		</station>
+		<param name="zg_text" value="Pretežno sunčano uz uglavnom slab vjetar. Najniža temperatura između 10 i 13, a najviša dnevna oko 26 °C."/>
+	</section>
+</VW>
+

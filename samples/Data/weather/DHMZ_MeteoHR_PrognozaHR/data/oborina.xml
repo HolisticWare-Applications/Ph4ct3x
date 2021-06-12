@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dnevna_oborina>
+  <datumtermin>
+    <datum>02.06.2021.</datum>
+    <termin>8</termin>
+  </datumtermin>
+  <grad>
+    <ime>Slavonski Brod</ime>
+    <kolicina>0.3</kolicina>
+  </grad>
+</dnevna_oborina>

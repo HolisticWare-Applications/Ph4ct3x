@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Ph4ct3x.App.XamarinForms.Views.MotoricalTests.MaxLoadApproximationPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Text="Max Approximation Calculation"
+                    FontSize="Large">
+                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid
+                        Grid.Row="0"
+                        Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Mass [kg]" />
+                        <Entry
+                            x:Name="entryBodyMass"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Keyboard="Numeric">
+                        </Entry>
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Number of repetitions" />
+                        <Entry
+                            x:Name="entryNumberOfRepetition"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Keyboard="Numeric">
+                        </Entry>
+
+                    </Grid>
+
+                    <Button
+                        x:Name="buttonCalculate"
+                        Text="Calculate"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Clicked="ButtonCalculate_Clicked">
+                    </Button>
+
+                    <Label
+                        Text="Calculation Results"
+                        Grid.Row="2"
+                        Grid.Column="1" />
+                    <Grid
+                        Grid.Row="2"
+                        Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Epley (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultEpleyWikipedia"
+                            Grid.Row="0"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Brzycki (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultBrzyckiWikipedia"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Text="McGlothin (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultMcGlothinWikipedia"
+                            Grid.Row="2"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Text="Lombardi (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultLombardiWikipedia"
+                            Grid.Row="3"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Text="Mayhew et al. (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultMayhewWikipedia"
+                            Grid.Row="4"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="5"
+                            Grid.Column="0"
+                            Text="O'Conner et al. (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultOConnerWikipedia"
+                            Grid.Row="5"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="6"
+                            Grid.Column="0"
+                            Text="Wathan (Wikipedia)" />
+
+                        <Label
+                            x:Name="labelResultWathanWikipedia"
+                            Grid.Row="6"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="7"
+                            Grid.Column="0"
+                            Text="Beachle (BrianMac)" />
+
+                        <Label
+                            x:Name="labelResultBeachleBrianMac"
+                            Grid.Row="7"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="8"
+                            Grid.Column="0"
+                            Text="Bryzicky (BrianMac)" />
+
+                        <Label
+                            x:Name="labelResultBryzickyBrianMac"
+                            Grid.Row="8"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="9"
+                            Grid.Column="0"
+                            Text="Bryzicky (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultBryzickySportScience"
+                            Grid.Row="9"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="10"
+                            Grid.Column="0"
+                            Text="Epley (BrianMac)" />
+
+                        <Label
+                            x:Name="labelResultEpleyBrianMac"
+                            Grid.Row="10"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="11"
+                            Grid.Column="0"
+                            Text="Epley (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultEpleySportScience"
+                            Grid.Row="11"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="12"
+                            Grid.Column="0"
+                            Text="Lander (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultLanderSportScience"
+                            Grid.Row="12"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="13"
+                            Grid.Column="0"
+                            Text="Landers (BrianMac)" />
+
+                        <Label
+                            x:Name="labelResultLandersBrianMac"
+                            Grid.Row="13"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="14"
+                            Grid.Column="0"
+                            Text="Lombardi (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultLombardiSportScience"
+                            Grid.Row="14"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="15"
+                            Grid.Column="0"
+                            Text="Mayhew et. al. (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultMayhewSportScience"
+                            Grid.Row="15"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="16"
+                            Grid.Column="0"
+                            Text="OConner et. al. (SportScience)" />
+
+                        <Label
+                            x:Name="labelResultOConnerSportScience"
+                            Grid.Row="16"
+                            Grid.Column="1" />
+
+                        <Label
+                            Grid.Row="17"
+                            Grid.Column="0"
+                            Text="Wathan (SportScience)" />
+                        <Label
+                            x:Name="labelResultWathanSportScience"
+                            Grid.Row="17"
+                            Grid.Column="1" />
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

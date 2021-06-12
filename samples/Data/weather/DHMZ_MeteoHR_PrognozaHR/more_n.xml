@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Temperature_mora>
+	<Copyright>DHMZ - meteo.hr</Copyright>
+	<Datum>31.12.2020</Datum>
+	<Podatci>
+		<Postaja autom="0">Postaja \ Termin mjerenja</Postaja>
+		<Termin>06</Termin>
+		<Termin>07</Termin>
+		<Termin>10</Termin>
+		<Termin>13</Termin>
+		<Termin>14</Termin>
+		<Termin>16</Termin>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="0">Božava</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin>15</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Crikvenica</Postaja>
+		<Termin>11.4</Termin>
+		<Termin>11.5</Termin>
+		<Termin>11.5</Termin>
+		<Termin>11.2</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Dubrovnik</Postaja>
+		<Termin>16.3</Termin>
+		<Termin>16.2</Termin>
+		<Termin>16.1</Termin>
+		<Termin>15.9</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="0">Hvar</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin>16</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="0">Komiža</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin>16</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="0">Krk</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin>14</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Malinska*</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Mali Lošinj</Postaja>
+		<Termin>14.6</Termin>
+		<Termin>14.6</Termin>
+		<Termin>14.6</Termin>
+		<Termin>14.6</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Mljet-otvoreno more</Postaja>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Mljet-Veliko jezero</Postaja>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Mljet-Malo jezero</Postaja>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+		<Termin>-</Termin>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="0">Split</Postaja>
+		<Termin/>
+		<Termin/>
+		<Termin/>
+		<Termin>15</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+	<Podatci>
+		<Postaja autom="1">Zadar</Postaja>
+		<Termin>13.0</Termin>
+		<Termin>12.9</Termin>
+		<Termin>12.8</Termin>
+		<Termin>13.2</Termin>
+		<Termin/>
+		<Termin/>
+	</Podatci>
+</Temperature_mora>

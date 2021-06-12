@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>HolisticWare.Ph4ct3x.Server.ASPnet.UI.RazorPages</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Core\HolisticWare.Ph4ct3x.Core\HolisticWare.Ph4ct3x.Core.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Core\HolisticWare.Ph4ct3x.DiagnosticTests.Core.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.ML.Evaluation\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.ML.Evaluation.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.ML.Training\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.ML.Training.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Nutrition\HolisticWare.Ph4ct3x.DiagnosticTests.Nutrition.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Physiological\HolisticWare.Ph4ct3x.DiagnosticTests.Physiological.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Ph4ct3x\" />
+  </ItemGroup>
+</Project>

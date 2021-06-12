@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bioprognoza>
+	<Podaci>
+		<Datum>02.06.2021</Datum>
+		<Tekst>Biometeorološke prilike će na području cijele zemlje biti povoljne. Jutro će u unutrašnjosti biti svježije, a danju pretežno ugodno pa stoga savjetujemo slojevito odijevanje. Pretežno vedro vrijeme uz stabilne vremenske uvjete pogodovat će vanjskim aktivnostima što će pozitivno utjecati na raspoloženje ljudi. U slučaju duljeg boravka na otvorenom treba pripaziti na utjecaj visokog, a mjestimice i vrlo visokog, UV indeksa. </Tekst>
+		<station name="istocna">3</station>
+		<station name="sredisnja">3</station>
+		<station name="gorska">3</station>
+		<station name="sjevernijadran">3</station>
+		<station name="juznijadran">3</station>
+
+	</Podaci>
+	<Podaci>
+		<Datum>03.06.2021</Datum>
+		<Tekst>Nastavak povoljnih biometeoroloških uvjeta na području cijele zemlje bit će posljedica stabilnog vremena. Uz pretežno vedro vrijeme, što će mnoge potaknuti na duži boravak na otvorenom, treba pripaziti na utjecaj visokog, na nekim područjima i vrlo visokog, indeksa UV zračenja. Moguće lokalne nestabilnosti na području Gorskog kotara mogu neznatno umanjiti pozitivan dojam vremena.</Tekst>
+		<station name="istocna">3</station>
+		<station name="sredisnja">3</station>
+		<station name="gorska">3</station>
+		<station name="sjevernijadran">3</station>
+		<station name="juznijadran">3</station>
+
+	</Podaci>
+	<Podaci>
+		<Datum>04.06.2021</Datum>
+		<Tekst>Stabilna atmosfera podržava povoljne biometeorološke prilike na području cijele zemlje. Pretežno vedro i sunčano vrijeme mnogi će iskoristiti za aktivnosti na otvorenom što će dodatno pozitivno utjecati na njihovo raspoloženje, no pri tome treba obratiti pozornost na UV indeks te se adekvatno zaštititi. Lokalne nestabilnosti na području Gorskog kotara u poslijepodnevnim satima mogu uzrokovati manje tegobe kod najosjetljivijih meteoropata.</Tekst>
+		<station name="istocna">3</station>
+		<station name="sredisnja">3</station>
+		<station name="gorska">3</station>
+		<station name="sjevernijadran">3</station>
+		<station name="juznijadran">3</station>
+
+	</Podaci>
+</Bioprognoza>

@@ -1,0 +1,247 @@
+﻿@page
+@model InstantMessagingChatModel
+@{
+}
+
+<head>
+    <title>SignalR Simple Chat</title>
+    <style type="text/css">
+        .container 
+        {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--
+        <environment include="Development">
+        </environment>
+        -->
+            <p> 
+                <a href="~/signalr/hubs">~/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href="~/Ph4ct3x/Communication/signalr/hubs">~/Ph4ct3x/Communication/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href="~/Ph4ct3x/Communication/InstantMessagingChat/signalr/hubs">/Ph4ct3x/Communication/InstantMessagingChat/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href="/signalr/hubs">~/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href="/Ph4ct3x/Communication/signalr/hubs">/Ph4ct3x/Communication/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href="/Ph4ct3x/Communication/InstantMessagingChat/signalr/hubs">/Ph4ct3x/Communication/InstantMessagingChat/signalr/hubs</a>
+            </p>
+            <p> 
+                <a href=""></a>
+            </p>
+        
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion">
+        </ul>
+    </div>
+    <environment include="Development">
+        <script src="signalr/hubs"></script>
+        <script src="scripts/signalr/client-signalr.js"></script>
+        <script>
+            var transportType = signalR.TransportType.WebSockets;
+            //can also be ServerSentEvents or LongPolling
+            var logger = new signalR.ConsoleLogger(signalR.LogLevel.Information);
+            var chatHub = new signalR.HttpConnection
+                                (
+                                    `http://${document.location.host}/chat`, 
+                                    { 
+                                        transport: transportType, 
+                                        logger: logger 
+                                    }
+                                );
+            var chatConnection = new signalR.HubConnection(chatHub, logger);
+
+            chatConnection.onClosed = e => 
+            {
+                console.log('connection closed');
+            };
+
+            chatConnection
+                .on
+                    (
+                        'Send', 
+                        (message) => 
+                        {
+                           console.log('received message');
+                        }
+                    );
+
+            chatConnection
+                .start()
+                .catch
+                    (
+                        err => 
+                        {
+                            console.log('connection error');
+                        }
+                    );
+
+           function send(message) 
+           {
+               chatConnection.invoke('Send', message);
+           }
+
+
+            /*
+            OK
+            let connection = new signalR.HubConnection('/chat');
+
+            connection.on
+            (
+                'send',
+                data =>
+                {
+                    console.log(data);
+                }
+            );
+
+            connection
+                .start()
+                .then
+                    (
+                        () =>
+                        connection.invoke('send', 'Hello')
+                    );
+            */
+        </script>
+        
+        <!--Add script to update the page and send messages.--> 
+        <script type="text/javascript">
+            $(
+                function () 
+                {
+                    // Declare a proxy to reference the hub. 
+                    var chat = $.connection.chatHub;
+                    // Create a function that the hub can call to broadcast messages.
+                    chat.client.broadcastMessage = function (name, message) 
+                    {
+                        // Html encode display name and message. 
+                        var encodedName = $('<div />').text(name).html();
+                        var encodedMsg = $('<div />').text(message).html();
+                        // Add the message to the page. 
+                        $('#discussion')
+                            .append
+                                (
+                                    '<li>'
+                                    + '<strong>' 
+                                    + encodedName + 
+                                    '</strong>:&nbsp;&nbsp;' 
+                                    + encodedMsg + 
+                                    '</li>'
+                                    );
+                    };
+                    // Get the user name and store it to prepend to messages.
+                    $('#displayname').val(prompt('Enter your name:', ''));
+                    // Set initial focus to message input box.  
+                    $('#message').focus();
+                    // Start the connection.
+                    $.connection
+                        .hub
+                        .start()
+                        .done
+                            (
+                                function () 
+                                {
+                                    $('#sendmessage')
+                                        .click
+                                            (
+                                                function () 
+                                                {
+                                                    // Call the Send method on the hub. 
+                                                    chat.server.send($('#displayname').val(), $('#message').val());
+                                                    // Clear text box and reset focus for next comment. 
+                                                    $('#message').val('').focus();
+                                                }
+                                            );
+                                }
+                            );
+                }
+            );
+        </script>
+    </environment>
+    <environment exclude="Production">
+        <script src="scripts/signalr/client-signalr.min.js"></script>
+        <script>
+            var transportType = signalR.TransportType.WebSockets;
+            //can also be ServerSentEvents or LongPolling
+            var logger = new signalR.ConsoleLogger(signalR.LogLevel.Information);
+            var chatHub = new signalR.HttpConnection
+                                (
+                                    `http://${document.location.host}/chat`, 
+                                    { 
+                                        transport: transportType, 
+                                        logger: logger 
+                                    }
+                                );
+            var chatConnection = new signalR.HubConnection(chatHub, logger);
+
+            chatConnection.onClosed = e => 
+            {
+                console.log('connection closed');
+            };
+
+            chatConnection
+                .on
+                    (
+                        'Send', 
+                        (message) => 
+                        {
+                           console.log('received message');
+                        }
+                    );
+
+            chatConnection
+                .start()
+                .catch
+                    (
+                        err => 
+                        {
+                            console.log('connection error');
+                        }
+                    );
+
+           function send(message) 
+           {
+               chatConnection.invoke('Send', message);
+           }
+
+
+            /*
+            OK
+            let connection = new signalR.HubConnection('/chat');
+
+            connection.on
+            (
+                'send',
+                data =>
+                {
+                    console.log(data);
+                }
+            );
+
+            connection
+                .start()
+                .then
+                    (
+                        () =>
+                        connection.invoke('send', 'Hello')
+                    );
+            */
+        </script>                
+    </environment>
+</body>

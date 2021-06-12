@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ph4ct3x.App.XamarinForms.Views.DiagnosticTests.SomatoTypePage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Text="Somatotype Calculations"
+                    FontSize="Large"
+                    >
+                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label 
+                        Grid.Row="0" Grid.Column="1" 
+                        Text="Main" 
+                        />
+                    <Grid
+                        Grid.Row="0" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Height [cm]" 
+                            />
+                        <Entry
+                            x:Name="entryBodyHeight"
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Mass [kg]" 
+                            />
+                        <Entry
+                            x:Name="entryBodyMass"
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                    </Grid>
+
+
+
+                    <Label 
+                            Text="Skinfolds" 
+                            Grid.Row="1" Grid.Column="1" 
+                            />
+                    <Grid
+                            Grid.Row="1" Grid.Column="2" 
+                            >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Triceps [mm]" 
+                            />
+                        <Entry
+                            x:Name="entrySkinfoldTriceps"
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Subscapular [mm]" 
+                            />
+                        <Entry
+                            x:Name="entrySkinfoldSubscapular"
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="2" Grid.Column="0" 
+                            Text="Supraspinale [mm]" 
+                            />
+                        <Entry
+                            x:Name="entrySkinfoldSupraspinale"
+                            Grid.Row="2" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="3" Grid.Column="0" 
+                            Text="Medial Calf [mm]" 
+                            />
+                        <Entry
+                            x:Name="entrySkinfoldCalfMedial"
+                            Grid.Row="3" Grid.Column="1"                        
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Label 
+                        Text="Breadths" 
+                        Grid.Row="2" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="2" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Biepicondylar Humerus [cm]" 
+                            />
+                        <Entry
+                            x:Name="entryBreadthsHumerus"
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Biepicondylar Femur [cm]" 
+                            />
+                        <Entry
+                            x:Name="entryBreadthsFemur"
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                    </Grid>
+                
+                    <Label 
+                        Text="Girth (Circumferences)" 
+                        Grid.Row="3" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="3" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Arm (Upper) [cm]" 
+                            />
+                        <Entry
+                            x:Name="entryGirthCircumfenceArmUpper"
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Calf [cm]" 
+                            />
+                        <Entry
+                            x:Name="entryGirthCircumfenceCalf"
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Button
+                        x:Name="buttonCalculateLocal"
+                        Text="Calculate Local"
+                        Grid.Row="4" Grid.Column="2"
+                        Clicked="ButtonCalculateLocal_Clicked"
+                        >
+                    </Button>
+                
+                    <Label 
+                        Text="Calculation Results" 
+                        Grid.Row="5" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="5" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="University of Exeter" 
+                            />
+                        <Label
+                            x:Name="labelCalculationResultUniversityOfExeter"
+                            Grid.Row="0" Grid.Column="1"
+                            Text="N/A"
+                            >
+                        </Label>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Misigoj Durakovic" 
+                            />
+                        <Label
+                            x:Name="labelCalculationResultMisigojDurakovic"
+                            Grid.Row="1" Grid.Column="1"
+                            Text="N/A"
+                            >
+                        </Label>
+                    </Grid>
+                
+                    <Button
+                        x:Name="buttonCalculateAzureMLStudio"
+                        Text="Calculate Azure ML Studio"
+                        Grid.Row="6" Grid.Column="2"
+                        Clicked="ButtonCalculateAzureMLStudio_Clicked"
+                        >
+                    </Button>
+                   <Grid
+                        Grid.Row="7" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Azure Machine Learning Studio:" 
+                            />
+                        <Label
+                            x:Name="labelCalculationResultAzureMachineLearningStudio"
+                            Grid.Row="0" Grid.Column="1"
+                            Text="N/A"
+                            >
+                        </Label>
+                    </Grid>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

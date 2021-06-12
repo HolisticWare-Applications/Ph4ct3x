@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Privacy and GDPR in Ph4ct3x - Physical Activity Expert System";
+}
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p>
+        NOTE: this website uses cookies based on user/visitor consent both in anonnymous mode mainly for user 
+        experience (UX) purposes (reducing the need for repeatedly entering data) and for authentication/authorization.
+    </p>
+    <h2>Cookies and GDPR</h2>
+    <ul>
+        <li>
+            <a asp-page="./Cookies">Cookies</a>
+        </li>
+        <li>
+            <a asp-page="./Consent">Consent</a>
+        </li>
+        <li>
+            <a asp-page="./Privacy">Privacy</a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<VW version="1.1" creator="DHMZ-SVAP"> 
+	<metadata>
+		<datatime>311220</datatime>
+		<creationtime>Thu Dec 31 00:00:00 2020</creationtime>
+	</metadata> 
+	<section name="All">  
+		<param name="rh_text" value="Promjenljivo oblačno povremeno s kišom, osobito na Jadranu i područjima uz Jadran. U najvišem gorju može pasti i malo snijega. Kiša će na Jadranu lokalno biti i obilna, osobito u subotu. Vjetar slab do umjeren sjeveroistočni, a u Lici i Slavoniji jugoistočni. Na Jadranu umjereno i jako, mjestimice u dane vikenda i olujno jugo. Tijekom vikenda ramjerno toplo za ovaj dio godine, osobito na kopnu, dok će u ponedjeljak posvuda biti malo svježije."/>     	
+		<station name="hr.izgledi:Kopno2"> 
+			<param name="datum" value="020121"/>			
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="2" /> 
+			<param name="Tmx" value="10" /> 
+			<param name="wind" value="3" />
+		</station> 
+		<station name="hr.izgledi:Kopno3"> 
+			<param name="datum" value="030121"/>			
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="3" /> 
+			<param name="Tmx" value="9" /> 
+			<param name="wind" value="4" />
+		</station> 
+		<station name="hr.izgledi:Kopno4"> 
+			<param name="datum" value="040121"/>			
+			<param name="vrijeme" value="26" /> 
+			<param name="Tmn" value="2" /> 
+			<param name="Tmx" value="6" /> 
+			<param name="wind" value="4" />
+		</station> 
+		<station name="hr.izgledi:More2"> 
+			<param name="datum" value="020121"/>			
+			<param name="vrijeme" value="13" /> 
+			<param name="Tmn" value="10" /> 
+			<param name="Tmx" value="14" /> 
+			<param name="wind" value="12" />
+		</station> 
+		<station name="hr.izgledi:More3"> 
+			<param name="datum" value="030121"/>			
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="11" /> 
+			<param name="Tmx" value="14" /> 
+			<param name="wind" value="12" />
+		</station> 
+		<station name="hr.izgledi:More4"> 
+			<param name="datum" value="040121"/>			
+			<param name="vrijeme" value="12" /> 
+			<param name="Tmn" value="8" /> 
+			<param name="Tmx" value="11" /> 
+			<param name="wind" value="4" />
+		</station> 
+
+	</section>
+</VW>
+

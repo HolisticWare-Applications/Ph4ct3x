@@ -1,0 +1,131 @@
+---
+uti: com.xamarin.workbook
+id: 248b48bf-1d68-4302-88c3-b3fe4c6255f6
+title: Somatotype.Heath-Carter-13-parameters
+platforms:
+- DotNetCore
+---
+
+# Somatotype
+
+Heath-Carter
+
+```csharp
+double height_cm = 172;
+double mass_kg = 58.5;
+
+double endomorphic_skinfold_subtriceps = 6.4;
+double endomorphic_skinfold_subscapular = 7.1;
+double endomorphic_skinfold_suprailiac = 4.6;
+double endomorphic_skinfold_calf = 4.6;
+
+double breadth_humerus_biepicondylar = 0.0;
+double breadth_femur_biepicondylar = 0.0;
+
+double girth_arm_upper = 0.0;
+double girth_calf = 0.0;
+```
+
+Corrections
+
+Girth Arm Upper:
+
+```csharp
+double girth_arm_upper_corrected = girth_arm_upper - endomorphic_skinfold_subtriceps;
+```
+
+Calf:
+
+```csharp
+double girth_calf_corrected = girth_calf - endomorphic_skinfold_calf;
+```
+
+### Calculations
+
+\
+Endomorphic component calculation
+
+```csharp
+double endomorphic_sum = 
+                (
+                    endomorphic_skinfold_subtriceps
+                    +
+                    endomorphic_skinfold_subscapular
+                    +
+                    endomorphic_skinfold_suprailiac
+                )
+                * 170.18 / height_cm
+                ;
+```
+
+Reading from the table:
+
+```csharp
+double endomorhpic_X = 
+                        -0.7182
+                        +
+                        0.1452 * endomorphic_sum
+                        +
+                        - 0.00068 * (endomorphic_sum * endomorphic_sum)
+                        +
+                        0.0000014 * (endomorphic_sum * endomorphic_sum * endomorphic_sum)
+                        ;
+double endomorphy = endomorhpic_X;
+```
+
+### Mesomorphic component calculation
+
+```csharp
+double mesomorphy =
+                    0.858 * breadth_humerus_biepicondylar 
+                    + 
+                    0.601 * breadth_femur_biepicondylar 
+                    + 
+                    0.188 * girth_arm_upper_corrected 
+                    + 
+                    0.161 * girth_calf_corrected 
+                    +
+                    - 0.131 * height_cm
+                    + 
+                    4.5
+                    ;
+```
+
+HWR:
+
+```csharp
+double HWR_weight_index = height_cm / Math.Pow(mass_kg, 1.0 / 3.0);
+```
+
+Ectomorphy:
+
+```csharp
+double ectomorphy = double.NaN;
+
+if (HWR_weight_index >= 40.75) 
+{
+    ectomorphy = 0.732 * HWR_weight_index - 28.58;
+}
+else if (HWR_weight_index < 40.75 && HWR_weight_index >= 38.25) 
+{
+    ectomorphy = 0.463 * HWR_weight_index - 17.63;
+}
+else if ( HWR_weight_index <= 38.25)
+{
+    ectomorphy = 0.1;
+}
+```
+
+Plot:
+
+```csharp
+(double X, double Y) point = (ectomorphy - endomorphy, 2 * mesomorphy - (endomorphy + ectomorphy));
+```
+
+## Somatotype final results
+
+Tuple (3-tuple, tripple):
+
+```csharp
+(endomorphy, mesomorphy, ectomorphy);
+```

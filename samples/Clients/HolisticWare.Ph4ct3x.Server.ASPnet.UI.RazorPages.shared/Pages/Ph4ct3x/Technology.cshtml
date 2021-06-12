@@ -1,0 +1,130 @@
+﻿@page
+@model TechnologyModel
+@{
+}
+    <h1>@ViewData["Title"]</h1>
+
+    <p>
+        NOTE: part of this description is current state and parto of it is planned, so this is kind of 
+        docaumentation and roadmap.
+    </p>
+    <p>
+        NOTE: this is personal project based on personal needs and driven with desire to show possibilities
+        of modern .NET stack how much code is possible to share horizontally and vertically. Horizontal 
+        code sharing means sharing code across mobile applications (Android, iOS, UWP) and/or across desktop
+        applications, while vertical code sharing defines shared code between client devices (IoT, wearables, 
+        mobile and desktop) and server (ASP.net Core).
+    </p>
+
+    <p>
+        Functionality of Ph4ct3x will be implemented through mobile application[s] (Xamarin.Forms for Android, 
+        iOS, Universal Windows Platform UWP) and/or desktop apps (console with CursesSharp, Windows.Forms, 
+        Windows Presentation Foundation WPF, GTK# 
+        for Linux and AppKit for MacOSX).
+    </p>
+    <p>                    
+        The Domain Logic (Business Logic) is written .NET Standard reusable libraries and    
+        with the Domain Logic (Business Logic) is, .NET Standard reusable libraries and ASP.net Core) 
+    </p>
+
+    <h2>Curent</h2>
+
+    <ul>
+        <li>
+            Server Side - ASP.net Core
+            <ul>
+                <li>
+                    UI _ Razor Pages
+                </li>
+                <li>
+                    APIs
+                </li>
+                <li>
+                    <ul>
+                        Communication Protocols
+                        <li>
+                            WebAPI (JSON, XML and planned binary formats ProtoBufs, Bond, Avro, Thrift)
+                            <br/>
+                            [<a href="/swagger/">WebAPI Swagger Definitions</a>]
+                        </li>
+                        <li>
+                            SignalR (2017-12-28 alpha)
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        Serialization Frameworks - performance and cost reduction
+                        <li>
+                            WebAPI (JSON, XML and planned binary formats ProtoBufs, Bond, Avro, Thrift)
+                        </li>
+                        <li>
+                            SignalR
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Planned [INPROGRESS]</h2>
+
+    <ul>
+        <li>
+            Server Side - ASP.net Core
+            <ul>
+                <li>
+                    APIs
+                </li>
+                <li>
+                    <ul>
+                        Communication Protocols
+                        <li>
+                            Remote Procedure Calls (RPC)
+                            <ul>
+                                <li>
+                                    gRPC
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        Serialization Frameworks - performance and cost reduction
+                        <li>
+                            binary formats (for WebAPI, SignalR, gRPC...)
+                            <ul>
+                                <li>
+                                    Protobuffers
+                                </li>
+                                <li>
+                                    Microsoft Bond
+                                </li>
+                                <li>
+                                    Apache Avro
+                                </li>
+                                <li>
+                                    Apache Thfift
+                                </li>
+                                <li>
+                                    MessagePack
+                                </li>
+                                <li>
+                                    CapNProto
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+    </ul>

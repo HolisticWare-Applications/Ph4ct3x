@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ph4ct3x - Diagnostic Tests";
+}
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <ul>
+        <li>
+            <a 
+                asp-page="./Morphological/Index"
+                >
+                Morphological
+            </a>
+            <ul>
+                <li>
+                    <a 
+                        asp-page="./Morphological/HeartRateMaximal"
+                        >
+                        Heart Rate maximal
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        asp-page="./Morphological/BodyMassIndex"
+                        >
+                        Body Mass Index
+                        </a>
+                </li>
+                <li>
+                    <a 
+                        asp-page="./Morphological/BasalMetabolicRate"
+                        >
+                        Basal Metabolic Rate
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        asp-page="./Morphological/PonderalIndex"
+                        >
+                        Ponderal Index
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a 
+                asp-page="./Motorical/Index"
+                >
+                Motorical
+            </a>
+            <ul>
+                <li>
+                    <a asp-page="./Motorical/MaxLoadApproximation">
+                        Approximation for 1RM (1 repetitio/rep maximum, one repetition max) AKA Max Load
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

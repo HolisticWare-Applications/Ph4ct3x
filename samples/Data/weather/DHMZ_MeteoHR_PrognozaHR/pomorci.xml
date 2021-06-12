@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prognoza_pomorci>
+	<Copyright>DHMZ - meteo.hr</Copyright>
+	<Naslov>VREMENSKO IZVJEŠĆE, dan 31.12.2020 u 12:00 sati</Naslov>
+	<Upozorenje>Prema otvorenom moru mjestimice udari NW, u Velebitskom kanalu NE vjetra 35-40 čvorova, poslijepodne će oslabjeti. Mjestimice neverini. 	</Upozorenje>
+	<Stanje>Ciklona s frontalnim sustavom premješta se dalje na istok. 	</Stanje>
+	<Prognoza_zaglavlje>Vremenska prognoza za sljedeća 24 sata, vrijedi do: 01.01.2021 u 12 sati</Prognoza_zaglavlje>
+	<Prognoza_naslov>Sjeverni Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Vjetar NE i NW 6-16, u Velebitskom kanalu NE mjestimice do 20 čvorova, a prema otvorenom moru NW do 24 čvora. U drugom dijelu dana vjetar će postupno oslabjeti, a noću skretati na SE i SW te jačati na 10-20 čvorova. More 2-3, još u početku prema otvorenom 3-4. Vidljivost 10-20 km. Promjenljivo oblačno, mjestimice kiša, pljuskovi i grmljavina, uglavnom još poslijepodne. 	</Prognoza_tekst>
+	<Prognoza_naslov>Srednji Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Vjetar NW, uz obalu samo mjestimice i NE, 6-16, prema otvorenom moru NW do 26 čvorova. U drugom dijelu dana vjetar će postupno oslabjeti i sredinom noći skretati na SE te jačati na 8-18 čvorova. More 2-3, prema otvorenom još u početku 3-4. Vidljivost 10-20 km. Promjenljivo oblačno, mjestimice je moguća kiša te pljusak s grmljavinom. 	</Prognoza_tekst>
+	<Prognoza_naslov>Južni Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Vjetar NW 6-16, prema otvorenom moru do 24 čvora, a u drugom dijelu dana postupno će slabjeti, te pred jutro skretati na SE 6-16 čvorova. More 2-3, prema otvorenom još u početku 3-4. Vidljivost 10-20 km. Umjereno do pretežno oblačno, mjestimice moguća kiša, pljuskovi i grmljavina. 	</Prognoza_tekst>
+	<Tablica>
+		<Tablica_zaglavlje>Vrijeme na Jadranu u 10 sati</Tablica_zaglavlje>
+		<Podaci>
+			<Postaja>Rijeka</Postaja>
+			<Termin>NW 4</Termin>
+			<Termin>2</Termin>
+			<Termin>30</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1009</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Senj</Postaja>
+			<Termin>NE 17</Termin>
+			<Termin>3</Termin>
+			<Termin>30</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1009</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Mali Lošinj</Postaja>
+			<Termin>N 6</Termin>
+			<Termin>2</Termin>
+			<Termin>12</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1009</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Zadar</Postaja>
+			<Termin>NW 6</Termin>
+			<Termin>2</Termin>
+			<Termin>20</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1008</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Split</Postaja>
+			<Termin>NW 4</Termin>
+			<Termin>1</Termin>
+			<Termin>30</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1008</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Palagruža</Postaja>
+			<Termin>NW 18</Termin>
+			<Termin>3</Termin>
+			<Termin>20</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1009</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Dubrovnik</Postaja>
+			<Termin>N 4</Termin>
+			<Termin>2</Termin>
+			<Termin>15</Termin>
+			<Termin>3/4 OBLAČNO</Termin>
+			<Termin>1007</Termin>
+		</Podaci>
+	</Tablica>
+</Prognoza_pomorci>

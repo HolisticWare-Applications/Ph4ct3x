@@ -1,0 +1,37 @@
+﻿@page "/ph4ct3x/diagnostic-tests/motorical/max-load-1rm-approximations"
+
+<h1>Max Load (1RM) Approximations</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Mass [kg]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Repetitions [#]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
+        </div>
+    </div>
+</div>
+
+
+@code
+{
+    void Calculate()
+    {
+    }
+}

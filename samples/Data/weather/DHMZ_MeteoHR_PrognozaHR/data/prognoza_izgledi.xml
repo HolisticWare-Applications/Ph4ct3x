@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<VW version="1.1" creator="DHMZ-SVAP"> 
+	<metadata>
+		<datatime>020621</datatime>
+		<creationtime>Wed Jun 02 00:00:00 2021</creationtime>
+	</metadata> 
+	<section name="All">  
+		<param name="rh_text" value="Sunčano uz malu, u unutrašnjosti povremeno i umjerenu naoblaku. U gorskim područjima mogući poslijepodnevni lokalni pljuskovi, izglednije u subotu. U nedjelju nestabilnije i oblačnije uz mjestimičnu kišu i pljuskove s grmljavinom. Vjetar većinom slab, na Jadranu do umjeren sjeverozapadni i jugozapadni. Temperatura zraka u porastu."/>     	
+		<station name="hr.izgledi:Kopno2"> 
+			<param name="datum" value="040621"/>			
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="11" /> 
+			<param name="Tmx" value="26" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="hr.izgledi:Kopno3"> 
+			<param name="datum" value="050621"/>			
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="12" /> 
+			<param name="Tmx" value="28" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="hr.izgledi:Kopno4"> 
+			<param name="datum" value="060621"/>			
+			<param name="vrijeme" value="16" /> 
+			<param name="Tmn" value="15" /> 
+			<param name="Tmx" value="28" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="hr.izgledi:More2"> 
+			<param name="datum" value="040621"/>			
+			<param name="vrijeme" value="1" /> 
+			<param name="Tmn" value="17" /> 
+			<param name="Tmx" value="27" /> 
+			<param name="wind" value="6" />
+		</station> 
+		<station name="hr.izgledi:More3"> 
+			<param name="datum" value="050621"/>			
+			<param name="vrijeme" value="2" /> 
+			<param name="Tmn" value="18" /> 
+			<param name="Tmx" value="27" /> 
+			<param name="wind" value="0" />
+		</station> 
+		<station name="hr.izgledi:More4"> 
+			<param name="datum" value="060621"/>			
+			<param name="vrijeme" value="3" /> 
+			<param name="Tmn" value="18" /> 
+			<param name="Tmx" value="28" /> 
+			<param name="wind" value="6" />
+		</station> 
+
+	</section>
+</VW>
+

@@ -1,0 +1,20 @@
+﻿@page
+@model BodyMassIndexModel
+
+@{
+    ViewData["Title"] = "Body Mass Index";
+}
+<html>
+<body>
+    <p>
+        Enter data.
+    </p>
+    <div asp-validation-summary="All"></div>
+    <form method="POST">
+        <div>Mass: <input asp-for="BodyMassIndex.Mass" /></div>
+        <div>Height: <input asp-for="BodyMassIndex.Height" /></div>
+        <div>Mass: <input asp-for="BodyMassIndex.Exponent" /></div>
+        <input type="submit" />
+    </form>
+</body>
+</html>

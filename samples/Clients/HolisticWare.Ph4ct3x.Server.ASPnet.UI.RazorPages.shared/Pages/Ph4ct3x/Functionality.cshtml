@@ -1,0 +1,118 @@
+﻿@page
+@model FunctionalityModel
+@{
+}
+    <h1>@ViewData["Title"]</h1>
+
+    <p>                                
+        Ph4ct3x implements several fields in Sports Theory through main functional modules:
+    </p>
+    <p>                                
+        NOTE: Currently the most of the work is done to prepare infrastructure from technological aspects, 
+        so functionality suffers a bit (it is not developed/implemented with highest priorities).
+    </p>
+    <p>                                
+        NOTE: Currently the there are no plans to implement anything but SI system of measurement units. This
+        suite is planned for scientific research and there is little interest in thumbs or feet of dead kings
+        and other imperialistic guys.
+    </p>
+    <p>                                
+        NOTE: When application system/suite reaches satisfactory stability and set of features -  everything will
+        be published as Open Source on github. Contributions will be appreciated for sure, even those for features
+        like the one mentioned in NOTE above....
+    </p>
+
+    <ul>
+        <li>
+            Data Acquisition Modules
+                <ul>
+                    <li>
+                        Calendar
+                    </li>
+                    <li>
+                        Tracker - GPS Geo Location on mobile devices
+                    </li>
+                    <li>
+                        BlueTooth Module - for interfacing to various HR monitors and wearables/watches.
+                    </li>
+                    <li>
+                        OverTraining Module
+                    </li>
+                    <li>
+                        Diagnostic Tests Module (in cooperation with KIF in Zagreb, Croatia, Kinesiological Faculty
+                        at University Zagreb)
+
+                        This is battery of tests (and their protocols) for assesing fitness of athletes.
+                    </li>
+                </ul>
+        </li>
+        <li>
+            Data Analysis Modules 
+        </li>
+        <li>
+            Planning (Programming) Modules
+        </li>
+    </ul>            
+
+    <h2>Curent</h2>
+
+    <ul>
+        <li>
+            <a asp-page="./DiagnosticTests/Index">Diagnostic Tests</a>
+            <ul>
+                <li>
+                    <a 
+                        asp-page="./DiagnosticTests/Morphological/Index"
+                        >
+                        Morphological
+                    </a>
+                    <ul>
+                        <li>
+                            <a 
+                                asp-page="./DiagnosticTests/Morphological/HeartRateMaximal"
+                                >
+                                Heart Rate maximal
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                asp-page="./DiagnosticTests/Morphological/BodyMassIndex"
+                                >
+                                Body Mass Index
+                                </a>
+                        </li>
+                        <li>
+                            <a 
+                                asp-page="./DiagnosticTests/Morphological/BasalMetabolicRate"
+                                >
+                                Basal Metabolic Rate
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                asp-page="./DiagnosticTests/Morphological/PonderalIndex"
+                                >
+                                Ponderal Index
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a 
+                        asp-page="./DiagnosticTests/Motorical/Index"
+                        >
+                        Motorical
+                    </a>
+                    <ul>
+                        <li>
+                            <a 
+                                asp-page="./DiagnosticTests/Motorical/MaxLoadApproximation"
+                                >
+                                Max Load Approximation
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>

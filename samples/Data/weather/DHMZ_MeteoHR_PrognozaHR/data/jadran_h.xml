@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prognoza_jadran>
+	<Copyright>DHMZ - meteo.hr</Copyright>
+	<Naslov>Izvješće Pomorskog meteorološkog centra Split DHMZ-a dana 02.06.2021. u 06 sati</Naslov>
+	<Upozorenje>
+		<Upozorenje_naslov>Upozorenje</Upozorenje_naslov>
+		<Upozorenje_tekst>Nema. 		</Upozorenje_tekst>
+	</Upozorenje>
+	<Stanje>
+		<Stanje_naslov>Stanje</Stanje_naslov>
+		<Stanje_tekst>Jadran se nalazi pod utjecajem anticiklonalnog grebena. 		</Stanje_tekst>
+	</Stanje>
+	<Prognoza_naslov>Vremenska prognoza za Jadran za prvih 12 sati</Prognoza_naslov>
+	<Prognoza_tekst>Uz obalu ujutro bura, potom uglavnom jugozapadni vjetar 4-12 čvorova. Na otvorenom sjerernog i dijela srednjeg Jadrana jugoistočni, a drugdje sjeverozapadni vjetar 6-16 čvorova. More 1-2, u početku na otvorenom južnog Jadrana ponegdje 3. Vidljivost 10-20 km. Pretežno vedro. 	</Prognoza_tekst>
+	<Prognoza_naslov>Vremenska prognoza za sljedećih 12 sati</Prognoza_naslov>
+	<Prognoza_tekst>Uz obalu vjetar većinom slab, u početku većinom jugozapadni vjetar, potom bura. Na otvorenom moru umjeren sjeverozapadni, na sjevernom Jadranu u početku jugoistočni vjetar. More mirno ili malo valovito. Pretežno vedro. 	</Prognoza_tekst>
+</Prognoza_jadran>

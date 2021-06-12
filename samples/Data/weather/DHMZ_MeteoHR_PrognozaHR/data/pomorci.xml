@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prognoza_pomorci>
+	<Copyright>DHMZ - meteo.hr</Copyright>
+	<Naslov>VREMENSKO IZVJEŠĆE, dan 02.06.2021 u 06:00 sati</Naslov>
+	<Upozorenje>Nema. 	</Upozorenje>
+	<Stanje>Jadran se nalazi pod utjecajem anticiklonalnog grebena. 	</Stanje>
+	<Prognoza_zaglavlje>Vremenska prognoza za sljedeća 24 sata, vrijedi do: 03.06.2021 u 06 sati</Prognoza_zaglavlje>
+	<Prognoza_naslov>Sjeverni Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Uz obalu većinom NE vjetar 4-10, a na otvorenom moru SE vjetar 6-16 čvorova, oslabit će navečer. More 1-2. Vidljivost 10-20 km. Pretežno vedro. 	</Prognoza_tekst>
+	<Prognoza_naslov>Srednji Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Uz obalu NE, poslijepodne SW vjetar 4-12 čvorova, a na otvorenom SE i NW vjetar 6-16 čvorova. More 1-2. Vidljivost 10-20 km. Pretežno vedro. 	</Prognoza_tekst>
+	<Prognoza_naslov>Južni Jadran</Prognoza_naslov>
+	<Prognoza_tekst>Uz obalu NE, poslijepodne SW vjetar 4-12 čvorova, a na otvorenom NW vjetar 6-16 čvorova. More 1-2, u početku na otvorenom ponegdje 3. Vidljivost 10-20 km. Pretežno vedro. 	</Prognoza_tekst>
+	<Tablica>
+		<Tablica_zaglavlje>Vrijeme na Jadranu u 05 sati</Tablica_zaglavlje>
+		<Podaci>
+			<Postaja>Rijeka</Postaja>
+			<Termin>NE 4</Termin>
+			<Termin/>
+			<Termin>30</Termin>
+			<Termin>VEDRO</Termin>
+			<Termin>1019</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Senj</Postaja>
+			<Termin>E 10</Termin>
+			<Termin>2</Termin>
+			<Termin>25</Termin>
+			<Termin>1/4 OBLAČNO</Termin>
+			<Termin>1018</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Mali Lošinj</Postaja>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+		</Podaci>
+		<Podaci>
+			<Postaja>Zadar</Postaja>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+			<Termin/>
+		</Podaci>
+		<Podaci>
+			<Postaja>Split</Postaja>
+			<Termin>NE 6</Termin>
+			<Termin>1</Termin>
+			<Termin>40</Termin>
+			<Termin>VEDRO</Termin>
+			<Termin>1018</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Palagruža</Postaja>
+			<Termin/>
+			<Termin>2</Termin>
+			<Termin>20</Termin>
+			<Termin>VEDRO</Termin>
+			<Termin>1018</Termin>
+		</Podaci>
+		<Podaci>
+			<Postaja>Dubrovnik</Postaja>
+			<Termin>NE 6</Termin>
+			<Termin>2</Termin>
+			<Termin>20</Termin>
+			<Termin>VEDRO</Termin>
+			<Termin>1017</Termin>
+		</Podaci>
+	</Tablica>
+</Prognoza_pomorci>

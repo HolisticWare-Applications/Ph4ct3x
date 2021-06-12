@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visine_snijega>
+<naslov>Visine snijega u Hrvatskoj 31.12.2020 u 07 h</naslov>
+<grad>
+<ime>Begovo Razdolje</ime>
+<snijeg> 35</snijeg>
+<novi_snijeg>  5</novi_snijeg>
+</grad>
+<grad>
+<ime>Delnice</ime>
+<snijeg>  4</snijeg>
+<novi_snijeg>-</novi_snijeg>
+</grad>
+<grad>
+<ime>Gospić</ime>
+<snijeg>  1</snijeg>
+<novi_snijeg>  1</novi_snijeg>
+</grad>
+<grad>
+<ime>Parg-Čabar</ime>
+<snijeg>  9</snijeg>
+<novi_snijeg>  6</novi_snijeg>
+</grad>
+<grad>
+<ime>RC Puntijarka</ime>
+<snijeg>  2</snijeg>
+<novi_snijeg>  2</novi_snijeg>
+</grad>
+<grad>
+<ime>Zavižan</ime>
+<snijeg> 57</snijeg>
+<novi_snijeg>-</novi_snijeg>
+</grad>
+</visine_snijega>

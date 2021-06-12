@@ -1,0 +1,59 @@
+﻿@page
+@model MaxLoadApproximationModel
+@{
+    ViewData["Title"] = "Approximation for 1RM (1 repetitio/rep maximum, one repetition max) AKA Max Load";
+}
+@*
+    @functions
+    {
+        public class IndexModel : PageModel
+        {
+            public string Message { get; private set; } = "In page model: ";
+
+            public void OnGet()
+            {
+                Message += $" Server seconds  { DateTime.Now.Second.ToString() }";
+            }
+        }
+    }
+*@
+
+
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div asp-validation-summary="All"></div>
+    <form asp-controller="MaxLoadApproximationModel"
+          asp-action="Calculate"
+          method="post">
+        <div class="row">
+            <label class="col-xs-4" asp-for="Mass">Mass</label>
+            <label class="col-xs-2" asp-for="Mass">[kg]:</label>
+            <input class="col-xs-6" asp-for="Mass" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="NumberOfRepetitions">Height</label>
+            <label class="col-xs-2" asp-for="NumberOfRepetitions">[m]:</label>
+            <input class="col-xs-6" asp-for="NumberOfRepetitions" />
+        </div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2"></div>
+            <input class="col-xs-2" value="Calculate Form POST" type="submit" asp-page-handler="MaxLoadApproximation" />
+            <input class="col-xs-2" value="Calculate API WebAPI" type="button" />
+            <input class="col-xs-2" value="Calculate API SignalR" type="button" />
+        </div>
+    </form>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-4">MaxLoadApproximationModel = </div>
+            <div class="col-xs-2"></div>
+            <label class="col-xs-4" for="MaxLoadApproximationModel">@Model.MaxLoadApproximation.ToString("0.00")</label>
+        </div>
+        <div class="row">
+            <a asp-for="UrlAPI" for="UrlAPI" href="@Model.UrlAPI">@Model.UrlAPI</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b139a458-443d-4282-ac4d-63ca7fe5f095</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HolisticWare.Ph4ct3x.Server.ASPnet.UI.RazorPages.shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Communication\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Communication\InstantMessagingChat.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\BasalMetabolicRate.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\BodyMassIndex.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\HeartRateMaximal.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\PonderalCorpulenceIndex.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Motorical\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Motorical\MaxLoadApproximation.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Functionality.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Technology.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Communication\Index.cshtml.cs">
+      <DependentUpon>..\..\..\..\HolisticWare.Ph4ct3x.Server.UIPages\Pages\Ph4ct3x\Communication\Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Communication\InstantMessagingChat.cshtml.cs">
+      <DependentUpon>..\..\..\..\HolisticWare.Ph4ct3x.Server.UIPages\Pages\Ph4ct3x\Communication\InstantMessagingChat.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Index.cshtml.cs">
+      <DependentUpon>..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\BasalMetabolicRate.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Morphological\BasalMetabolicRate.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\BodyMassIndex.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Morphological\BodyMassIndex.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\HeartRateMaximal.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Morphological\HeartRateMaximal.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\Index.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Morphological\Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Morphological\PonderalCorpulenceIndex.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Morphological\PonderalCorpulenceIndex.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Motorical\Index.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Motorical\Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\DiagnosticTests\Motorical\MaxLoadApproximation.cshtml.cs">
+      <DependentUpon>..\..\..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\DiagnosticTests\Motorical\MaxLoadApproximation.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Functionality.cshtml.cs">
+      <DependentUpon>..\..\..\HolisticWare.Ph4ct3x.Server.UIPages\Pages\Ph4ct3x\Functionality.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Index.cshtml.cs">
+      <DependentUpon>..\..\..\HolisticWare.Ph4ct3x.Server\Pages\Ph4ct3x\Index.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Ph4ct3x\Technology.cshtml.cs">
+      <DependentUpon>..\..\..\HolisticWare.Ph4ct3x.Server.UIPages\Pages\Ph4ct3x\Technology.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

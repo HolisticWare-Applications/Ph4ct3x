@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prognoza_jadran>
+	<Copyright>DHMZ - meteo.hr</Copyright>
+	<Naslov>Izvješće Pomorskog meteorološkog centra Split DHMZ-a dana 31.12.2020. u 12 sati</Naslov>
+	<Upozorenje>
+		<Upozorenje_naslov>Upozorenje</Upozorenje_naslov>
+		<Upozorenje_tekst>Prema otvorenom moru mjestimice udari sjeverozapadnog vjetra, u Velebitskom kanalu bure 35-40 čvorova, poslijepodne će oslabjeti. Mjestimice neverini. 		</Upozorenje_tekst>
+	</Upozorenje>
+	<Stanje>
+		<Stanje_naslov>Stanje</Stanje_naslov>
+		<Stanje_tekst>Ciklona s frontalnim sustavom premješta se dalje na istok. 		</Stanje_tekst>
+	</Stanje>
+	<Prognoza_naslov>Vremenska prognoza za Jadran za prvih 12 sati</Prognoza_naslov>
+	<Prognoza_tekst>Vjetar sjeverozapadni, uz obalu mjestimice i bura 6-16, u Velebitskom kanalu bura mjestimice do 20 čvorova, a prema otvorenom moru sjeverozapadni do 24 čvora. U drugom dijelu dana vjetar će postupno slabjeti. More 2-3, prema otvorenom 3-4. Vidljivost 10-20 km. Promjenljivo oblačno, mjestimice kiša, pljuskovi i grmljavina, osobito na srednjem i južnom Jadranu. 	</Prognoza_tekst>
+	<Prognoza_naslov>Vremenska prognoza za sljedećih 12 sati</Prognoza_naslov>
+	<Prognoza_tekst>Jugozapadni vjetar će jačati na umjeren, a ujutro skretati na jugo i jačati na pojačano. More malo do umjereno valovito. Ponegdje promjenljiva naoblaka uz mogućnost za kišu ili pljusak. 	</Prognoza_tekst>
+</Prognoza_jadran>

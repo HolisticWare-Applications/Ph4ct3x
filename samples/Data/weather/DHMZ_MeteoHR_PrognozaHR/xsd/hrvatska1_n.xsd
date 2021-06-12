@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Hrvatska" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Hrvatska" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DatumTermin">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Datum" type="xs:string" minOccurs="0" />
+              <xs:element name="Termin" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Grad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GradIme" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="Lat" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="Lon" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="Podatci" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Temp" type="xs:string" minOccurs="0" />
+                    <xs:element name="Vlaga" type="xs:string" minOccurs="0" />
+                    <xs:element name="Tlak" type="xs:string" minOccurs="0" />
+                    <xs:element name="TlakTend" type="xs:string" minOccurs="0" />
+                    <xs:element name="VjetarSmjer" type="xs:string" minOccurs="0" />
+                    <xs:element name="VjetarBrzina" type="xs:string" minOccurs="0" />
+                    <xs:element name="Vrijeme" type="xs:string" minOccurs="0" />
+                    <xs:element name="VrijemeZnak" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="autom" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

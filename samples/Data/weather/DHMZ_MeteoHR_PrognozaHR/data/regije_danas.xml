@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regije_danas>
+  <datum>02.06.2021.</datum>
+  <istocna>
+    Pretežno sunčano, povremeno uz umjerenu naoblaku. Ujutro uz rijeke kratkotrajna lokalna magla. Vjetar većinom slab. Najviša dnevna temperatura od 22 do 24 °C.
+  </istocna>
+  <sredisnja>
+    Pretežno sunčano uz slab vjetar. Najviša dnevna temperatura od 22 do 25 °C.
+  </sredisnja>
+  <sjjadran>
+    Pretežno sunčano. Ujutro uz obalu burin, potom slab do umjeren jugozapadni i zapadni vjetar. Najviša dnevna temperatura od 22 do 25 °C.
+  </sjjadran>
+  <gorska>
+    Pretežno sunčano, poslijepodne uz umjerenu naoblaku, a u Gorskom kotaru je lokalno moguć i poneki kratkotrajni pljusak. Vjetar uglavnom slab. Najviša dnevna temperatura od 19 do 22 °C.
+  </gorska>
+  <dalmacija>
+    Sunčano. Ujutro uz obalu burin, potom i umjeren zapadnjak i jugozapadnjak. Najviša dnevna temperatura od 23 do 26 °C.
+  </dalmacija>
+  <istra>
+    Pretežno sunčano, poslijepodne mjestimice umjerena naoblaka. Ujutro i navečer puhat će slab istočni vjetar i bura, sredinom dana jugozapadni i zapadni vjetar. More će biti malo valovito. Najviša dnevna temperatura zraka bit će uglavnom od 22 do 24 °C.
+  </istra>
+</regije_danas>

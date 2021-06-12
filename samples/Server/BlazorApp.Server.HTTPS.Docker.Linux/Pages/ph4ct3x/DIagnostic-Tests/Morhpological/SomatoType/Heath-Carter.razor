@@ -1,0 +1,162 @@
+﻿@page "/ph4ct3x/diagnostic-tests/morphological/somatotype/heath-carter"
+
+@using HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.SomatoTypes;
+
+<h1>Heath Carter</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Mass [kg]:</label>
+        </div>
+        <div class="col">
+            <input value="@entryBodyMass" type="text"
+                   class="form-control" id="cc-num">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Height [m]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:20px;">
+        <div class="col">
+            <label for="cc-num">Skinfold Triceps [mm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Skinfold Supraspinale [mm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Skinfold Subscapular [mm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Skinfold Calf Medial [mm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:20px;">
+        <div class="col">
+            <label for="cc-num">Breadth Humerus [cm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Breadth Femur [cm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:20px;">
+        <div class="col">
+            <label for="cc-num">Circumference/Girth Arm Upper [cm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="cc-num">Circumference/Girth Calf [cm]:</label>
+        </div>
+        <div class="col">
+            <input class="form-control" id="cc-num" type="text">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <p class="">@labelCalculationResultUniversityOfExeter</p>
+        </div>
+    </div>
+
+</div>
+
+@functions
+{
+    String entryBodyMass = "";
+    String entryBodyHeight = "";
+    String entrySkinfoldTriceps = "";
+    String entrySkinfoldSubscapular = "";
+    String entrySkinfoldSupraspinale = "";
+    String entrySkinfoldCalfMedial = "";
+    String entryBreadthsFemur = "";
+    String entryBreadthsHumerus = "";
+    String entryGirthCircumfenceArmUpper = "";
+    String entryGirthCircumfenceCalf = "";
+
+    String labelCalculationResultUniversityOfExeter = "N/A";
+
+    void Calculate()
+    {
+        HeathCarterEastonUniversityOfExeter hc1 = new HeathCarterEastonUniversityOfExeter()
+        {
+            Mass = double.Parse(entryBodyMass),
+            Height = double.Parse(entryBodyHeight),
+            Skinfolds = new Skinfolds
+            {
+                SubTriceps = double.Parse(entrySkinfoldTriceps),
+                SubScapular = double.Parse(entrySkinfoldSubscapular),
+                SupraIliac = double.Parse(entrySkinfoldSupraspinale),
+                Calf = double.Parse(entrySkinfoldCalfMedial)
+            },
+            Bicondyles = new Bicondyles()
+            {
+                Femur = double.Parse(entryBreadthsFemur),
+                Humerus = double.Parse(entryBreadthsHumerus)
+            },
+            Circumferences = new Circumferences
+            {
+                ArmUpper = double.Parse(entryGirthCircumfenceArmUpper),
+                Calf = double.Parse(entryGirthCircumfenceCalf)
+            }
+        };
+
+        double endomorphic1 = hc1.EndomorphicComponent();
+        double mesomorphic1 = hc1.MesomorphicComponent();
+        double ectomorphic1 = hc1.EctomorphicComponent();
+
+        string result1 = $"{endomorphic1}, {mesomorphic1}, {ectomorphic1}";
+
+        labelCalculationResultUniversityOfExeter = result1;
+
+        return;
+    }
+}

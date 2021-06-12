@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:behaviors="clr-namespace:MvvmCross.Ph4ct3x.Core.Behaviors;assembly=MvvmCross.Ph4ct3x.Core"
+             xmlns:viewModels="clr-namespace:MvvmCross.Ph4ct3x.Core.ViewModels.DiagnosticTests.MorphologicalTests;assembly=MvvmCross.Ph4ct3x.Core"
+             x:TypeArguments="viewModels:SomatoTypePageViewModel"
+             x:Class="MvvmCross.Ph4ct3x.UI.Pages.DiagnosticTests.MorphologicalTests.SomatoTypePage"
+             x:Name="MainContent"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Text="Somatotype Calculations"
+                    FontSize="Large"
+                    >
+                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label 
+                        Grid.Row="0" Grid.Column="1" 
+                        Text="Main" 
+                        />
+                    <Grid
+                        Grid.Row="0" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Height [cm]" 
+                            />
+                        <Entry
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding BodyHeight}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Mass [kg]" 
+                            />
+                        <Entry
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding BodyMass}"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Label 
+                            Text="Skinfolds" 
+                            Grid.Row="1" Grid.Column="1" 
+                            />
+                    <Grid
+                            Grid.Row="1" Grid.Column="2" 
+                            >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Triceps [mm]" 
+                            />
+                        <Entry
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding SkinfoldTriceps}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Subscapular [mm]" 
+                            />
+                        <Entry
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding SkinfoldSubscapular}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="2" Grid.Column="0" 
+                            Text="Supraspinale [mm]" 
+                            />
+                        <Entry
+                            Grid.Row="2" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding SkinfoldSupraspinale}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="3" Grid.Column="0" 
+                            Text="Medial Calf [mm]" 
+                            />
+                        <Entry
+                            Grid.Row="3" Grid.Column="1"                        
+                            Keyboard="Numeric"
+                            Text="{Binding SkinfoldCalfMedial}"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Label 
+                        Text="Breadths" 
+                        Grid.Row="2" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="2" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Biepicondylar Humerus [cm]" 
+                            />
+                        <Entry
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding BreadthsHumerus}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Biepicondylar Femur [cm]" 
+                            />
+                        <Entry
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding BreadthsFemur}"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Label 
+                        Text="Girth (Circumferences)" 
+                        Grid.Row="3" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="3" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Arm (Upper) [cm]" 
+                            />
+                        <Entry
+                            x:Name="GirthCircumfenceArmUpper"
+                            Grid.Row="0" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding GirthCircumfenceArmUpper}"
+                            >
+                        </Entry>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Calf [cm]" 
+                            />
+                        <Entry
+                            x:Name="GirthCircumfenceCalf"
+                            Grid.Row="1" Grid.Column="1" 
+                            Keyboard="Numeric"
+                            Text="{Binding GirthCircumfenceCalf}"
+                            >
+                        </Entry>
+                    </Grid>
+
+                    <Button
+                        Text="Calculate Local"
+                        Grid.Row="4" Grid.Column="2"
+                        >
+                        <Button.Behaviors>
+                            <behaviors:EventToCommandBehavior 
+                                EventName="Clicked"
+                                Command="{Binding BindingContext.DataContext.CalculateAsyncCommand, Source={x:Reference MainContent}}">
+                            </behaviors:EventToCommandBehavior>
+                        </Button.Behaviors>
+                    </Button>
+
+                    <Label 
+                        Text="Calculation Results" 
+                        Grid.Row="5" Grid.Column="1" 
+                        />
+                    <Grid
+                        Grid.Row="5" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="University of Exeter" 
+                            />
+                        <Label
+                            Grid.Row="0" Grid.Column="1"
+                            Text="{Binding CalculationResultUniversityOfExeter}"
+                            >
+                        </Label>
+                        <Label 
+                            Grid.Row="1" Grid.Column="0" 
+                            Text="Misigoj Durakovic" 
+                            />
+                        <Label
+                            x:Name="labelCalculationResultMisigojDurakovic"
+                            Grid.Row="1" Grid.Column="1"
+                            Text="{Binding CalculationResultMisigojDurakovic}"
+                            >
+                        </Label>
+                    </Grid>
+
+                    <Button
+                        Text="Calculate Azure ML Studio"
+                        Grid.Row="6" Grid.Column="2"
+                        >
+                        <Button.Behaviors>
+                            <behaviors:EventToCommandBehavior 
+                                EventName="Clicked"
+                                Command="{Binding BindingContext.DataContext.CalculateAzureMLStudioAsyncCommand, Source={x:Reference MainContent}}">
+                            </behaviors:EventToCommandBehavior>
+                        </Button.Behaviors>
+                    </Button>
+                    <Grid
+                        Grid.Row="7" Grid.Column="2" 
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="Azure Machine Learning Studio:" 
+                            />
+                        <Label
+                            Grid.Row="0" Grid.Column="1"
+                            Text="{Binding CalculationResultAzureMachineLearningStudio}"
+                            >
+                        </Label>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</views:MvxContentPage>

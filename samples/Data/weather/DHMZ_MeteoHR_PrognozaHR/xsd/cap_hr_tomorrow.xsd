@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" targetNamespace="urn:oasis:names:tc:emergency:cap:1.2" xmlns:mstns="urn:oasis:names:tc:emergency:cap:1.2" xmlns="urn:oasis:names:tc:emergency:cap:1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="alert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identifier" type="xs:string" minOccurs="0" />
+        <xs:element name="sender" type="xs:string" minOccurs="0" />
+        <xs:element name="sent" type="xs:string" minOccurs="0" />
+        <xs:element name="status" type="xs:string" minOccurs="0" />
+        <xs:element name="msgType" type="xs:string" minOccurs="0" />
+        <xs:element name="scope" type="xs:string" minOccurs="0" />
+        <xs:element name="info" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="language" type="xs:string" minOccurs="0" />
+              <xs:element name="category" type="xs:string" minOccurs="0" />
+              <xs:element name="event" type="xs:string" minOccurs="0" />
+              <xs:element name="responseType" type="xs:string" minOccurs="0" />
+              <xs:element name="urgency" type="xs:string" minOccurs="0" />
+              <xs:element name="severity" type="xs:string" minOccurs="0" />
+              <xs:element name="certainty" type="xs:string" minOccurs="0" />
+              <xs:element name="onset" type="xs:string" minOccurs="0" />
+              <xs:element name="expires" type="xs:string" minOccurs="0" />
+              <xs:element name="senderName" type="xs:string" minOccurs="0" />
+              <xs:element name="description" type="xs:string" minOccurs="0" />
+              <xs:element name="instruction" type="xs:string" minOccurs="0" />
+              <xs:element name="parameter" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="valueName" type="xs:string" minOccurs="0" />
+                    <xs:element name="value" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="area" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="areaDesc" type="xs:string" minOccurs="0" />
+                    <xs:element name="geocode" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="valueName" type="xs:string" minOccurs="0" />
+                          <xs:element name="value" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="alert" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

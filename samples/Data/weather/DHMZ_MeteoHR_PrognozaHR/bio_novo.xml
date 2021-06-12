@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bioprognoza>
+	<Podaci>
+		<Datum>31.12.2020</Datum>
+		<Tekst>Nepovoljan biometeorološki utjecaj koji je prevladavao prethodnih dana će biti malo manje izražen. Uz okretanje vjetra na sjeverne smjerove i nešto niže temprature zraka, mnogi bi meteoropati mogli osjetiti blago poboljšanje općeg stanja. Tegobe od kojih inače pate kronični bolesnici lakše će se podnositi. </Tekst>
+		<station name="istocna">2</station>
+		<station name="sredisnja">2</station>
+		<station name="gorska">2</station>
+		<station name="sjevernijadran">2</station>
+		<station name="juznijadran">2</station>
+
+	</Podaci>
+	<Podaci>
+		<Datum>01.01.2021</Datum>
+		<Tekst>Biometeorološke prilike će biti malo nepovoljnije nego prethodnog dana. Zbog formiranja novog frontalnog sustava sa zapada, kod meteoropata je moguća glavobolja, razdražljivost popraćena slabijom koncentracijom. Tegobe od kojih inače pate kronični bolesnici mogu biti izraženije zbog nepovoljnog vremenskog utjecaja. U jutarnjim će satima biti hladnije, pa se savjetuje zaštita od hladnoće.</Tekst>
+		<station name="istocna">2</station>
+		<station name="sredisnja">2</station>
+		<station name="gorska">2</station>
+		<station name="sjevernijadran">2</station>
+		<station name="juznijadran">2</station>
+
+	</Podaci>
+</Bioprognoza>

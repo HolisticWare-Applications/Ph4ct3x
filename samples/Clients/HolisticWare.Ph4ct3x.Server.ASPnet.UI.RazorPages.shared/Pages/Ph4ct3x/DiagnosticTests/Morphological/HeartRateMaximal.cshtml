@@ -1,0 +1,59 @@
+﻿@page
+@model HeartRateMaximalModel
+@{
+    ViewData["Title"] = "Heart Rate Maximal Calculation";
+}
+@*    
+@functions 
+{
+    public class IndexModel : PageModel
+    {
+        public string Message { get; private set; } = "In page model: ";
+
+        public void OnGet()
+        {
+            Message += $" Server seconds  { DateTime.Now.Second.ToString() }";
+        }
+    }
+}
+*@
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div asp-validation-summary="All"></div>        
+    <form 
+        asp-controller="HeartRateMaximalModel" 
+        asp-action="Calculate" 
+        method="post"
+        >
+        <div class="row">
+            <label class="col-xs-4" asp-for="Age">Age</label>
+            <label class="col-xs-2" asp-for="Age">[YY.YY]:</label>
+            <input class="col-xs-6" asp-for="Age" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="DateOfBirth">DateOfBirth</label>
+            <label class="col-xs-2" asp-for="DateOfBirth">[YYYYMMMDD]:</label>
+            <input class="col-xs-6" asp-for="DateOfBirth" />
+        </div>
+        <div class="row">
+            <div   class="col-xs-4"></div>
+            <div   class="col-xs-2"></div>
+            <input class="col-xs-2" value="Calculate Form POST"   type="submit" asp-page-handler="H"/>
+            <input class="col-xs-2" value="Calculate API WebAPI"  type="button" />
+            <input class="col-xs-2" value="Calculate API SignalR" type="button" />
+        </div>
+    </form>
+
+    <div>
+        <div class="row">
+            <div    class="col-xs-4">HeartRateMaximal = </div>    
+            <div    class="col-xs-2"></div>    
+            <label  class="col-xs-4" for="HeartRateMaximal">@Model.HeartRateMaximal.ToString("0.00")</label>
+        </div>
+        <div class="row">
+            <a asp-for="UrlAPI" for="UrlAPI" href="@Model.HeartRateMaximal">@Model.HeartRateMaximal</a>
+        </div>
+    </div>        
+</body>
+</html>

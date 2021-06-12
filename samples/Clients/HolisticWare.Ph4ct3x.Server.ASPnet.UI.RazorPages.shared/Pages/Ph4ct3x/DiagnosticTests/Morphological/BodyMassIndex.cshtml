@@ -1,0 +1,97 @@
+﻿@page
+@model BodyMassIndexModel
+@{
+    ViewData["Title"] = "Body Mass Index Calculation";
+    
+    Model.Response.Cookies.Append
+                            (
+                                "Ph4ct3xCookie.Mass",
+                                @Model.BodyMassIndex.Mass.ToString(),
+                                new Microsoft.AspNetCore.Http.CookieOptions
+                                {
+                                    IsEssential = true
+                                }
+                            );
+}
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div asp-validation-summary="All"></div>
+    <form 
+        asp-controller="BodyMassIndex"
+        asp-action="Calculate"
+        method="post"
+        >
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <label class="col-xs-4">Mass</label>
+            <label class="col-xs-2">[kg]:</label>
+            <input class="col-xs-6" asp-for="BodyMassIndex.Mass" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Height</label>
+            <label class="col-xs-2">[m]:</label>
+            <input class="col-xs-6" asp-for="BodyMassIndex.Height" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Exponent</label>
+            <label class="col-xs-2">[2.3, 2.7]:</label>
+            <input class="col-xs-6" asp-for="BodyMassIndex.Exponent" />
+        </div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2"></div>
+            <input class="col-xs-2" value="Calculate Form POST" type="submit" asp-page-handler="BodyMassIndex" />
+            <input class="col-xs-2" value="Calculate API WebAPI" type="button" onclick="ajaxWebAPICall();" />
+            <input class="col-xs-2" value="Calculate API SignalR" type="button" />
+        </div>
+    </form>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-4">BMI1 = </div>
+            <div class="col-xs-2"></div>
+            <label class="col-xs-4" for="BMI1">@Model.BMI1.ToString("0.00")</label>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">BMI2 = </div>
+            <div class="col-xs-2"></div>
+            <label class="col-xs-4" for="BMI2">@Model.BMI2.ToString("0.00")</label>
+        </div>
+        <div class="row">
+            <a asp-for="UrlAPI" for="UrlAPI" href="@Model.UrlAPI">@Model.UrlAPI</a>
+        </div>
+    </div>
+</body>
+@section Scripts
+    {
+    <script type="text/javascript">
+    function ajaxWebAPICall()
+        {
+            console.log("Entered method");
+            $.ajax
+            (
+                {
+                    type: "GET",
+                    url: '/api/diagnostic-tests/morhpological/body-mass-index?mass=0&height=0',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    error: function (xhr, status, errorThrown)
+                    {
+                        var err = "Status: " + status + " " + errorThrown;
+                        console.log(err);
+                    }
+                }
+            )
+            .done
+            (
+                function (data)
+                {
+                    var s = "mc+++++ =" + data.result;
+                    console.log();
+                }
+            )
+        }
+    </script>
+}
+</html>

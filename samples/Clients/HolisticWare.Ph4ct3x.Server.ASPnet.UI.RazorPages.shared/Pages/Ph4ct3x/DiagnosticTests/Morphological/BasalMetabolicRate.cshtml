@@ -1,0 +1,104 @@
+﻿@page
+@model BasalMetabolicRateModel
+@{
+    ViewData["Title"] = "Basal Metabolic Rate Calculation";
+}
+@*    
+@functions 
+{
+    public class IndexModel : PageModel
+    {
+        public string Message { get; private set; } = "In page model: ";
+
+        public void OnGet()
+        {
+            Message += $" Server seconds  { DateTime.Now.Second.ToString() }";
+        }
+    }
+}
+*@
+<html>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <div asp-validation-summary="All"></div>
+    <form asp-controller="BasalMetabolicRateModel"
+          asp-action="Calculate"
+          method="post">
+        <div class="row">
+            <label class="col-xs-4" asp-for="Mass">Mass</label>
+            <label class="col-xs-2" asp-for="Mass">[kg]:</label>
+            <input class="col-xs-6" asp-for="Mass" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="Height">Height</label>
+            <label class="col-xs-2" asp-for="Height">[m]:</label>
+            <input class="col-xs-6" asp-for="Height" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="Age">Age</label>
+            <label class="col-xs-2" asp-for="Age">[YY.YY]:</label>
+            <input class="col-xs-6" asp-for="Age" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="DateOfBirth">DateOfBirth</label>
+            <label class="col-xs-2" asp-for="DateOfBirth">[YYYYMMDD]:</label>
+            <input class="col-xs-6" asp-for="DateOfBirth" />
+        </div>
+        <div class="row">
+            <label class="col-xs-4" asp-for="Gender">Gender</label>
+            <label class="col-xs-2" asp-for="Gender">[m|f]:</label>
+            <input class="col-xs-6" asp-for="Gender" />
+        </div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2"></div>
+            <input class="col-xs-2" value="Calculate Form POST" type="submit" asp-page-handler="BasalMetabolicRate" />
+            <input class="col-xs-2" value="Calculate API WebAPI" type="button" />
+            <input class="col-xs-2" value="Calculate API SignalR" type="button" />
+        </div>
+    </form>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-4">BasalMetabolicRate = </div>
+            <div class="col-xs-2"></div>
+            <label class="col-xs-4" for="BasalMetabolicRate">@Model.BasalMetabolicRate.ToString("0.00")</label>
+        </div>
+        <div class="row">
+            <a asp-for="UrlAPI" for="UrlAPI" href="@Model.UrlAPI">@Model.UrlAPI</a>
+        </div>
+    </div>
+</body>
+@section Scripts
+    {
+<script type="text/javascript">
+    function ajaxTest()
+        {
+        console.log("Entered method");
+        $.ajax
+        (
+            {
+                type: "GET",
+                url: '/api/diagnostic-tests/morhpological/basal-metabolic-rate?mass=0&height=0',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                error: function (xhr, status, errorThrown)
+                {
+                    var err = "Status: " + status + " " + errorThrown;
+                    console.log(err);
+                }
+            }
+        )
+        .done
+        (
+            function (data)
+            {
+                string s = "mc+++++ =" + data.result;
+                console.log();
+            }
+        )
+    }
+</script>
+}
+
+</html>

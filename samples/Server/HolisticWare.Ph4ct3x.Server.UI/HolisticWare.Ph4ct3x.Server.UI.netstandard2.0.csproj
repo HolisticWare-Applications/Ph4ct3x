@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Math\**" />
+    <EmbeddedResource Remove="Pages\Math\**" />
+    <None Remove="Pages\Math\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\Ph4ct3x\" />
+    <Folder Include="Pages\Ph4ct3x\DiagnosticTests\" />
+    <Folder Include="Pages\Ph4ct3x\DiagnosticTests\Morphological\" />
+    <Folder Include="Pages\Ph4ct3x\DiagnosticTests\Motorical\" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Core\HolisticWare.Ph4ct3x.Core.PhysicalActivityTraining\HolisticWare.Ph4ct3x.Core.PhysicalActivityTraining.csproj" />
+    <ProjectReference Include="..\..\..\source\Core\HolisticWare.Ph4ct3x.Core\HolisticWare.Ph4ct3x.Core.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Core\HolisticWare.Ph4ct3x.DiagnosticTests.Core.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.csproj" />
+    <ProjectReference Include="..\..\..\source\DiagnosticTests\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Ph4ct3x\DiagnosticTests\Morphological\BodyMassIndex.cshtml.cs">
+      <DependentUpon>BodyMassIndex.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

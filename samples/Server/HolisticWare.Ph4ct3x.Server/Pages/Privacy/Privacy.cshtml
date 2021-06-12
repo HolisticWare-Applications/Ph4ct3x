@@ -1,0 +1,23 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<html>
+<body>
+    <h2>@ViewData["Title"]</h2>
+
+    <h2>Cookies and GDPR</h2>
+    <ul>
+        <li>
+            <a asp-page="./Cookies">Cookies</a>
+        </li>
+        <li>
+            <a asp-page="./Consent">Consent</a>
+        </li>
+        <li>
+            <a asp-page="./Privacy">Privacy</a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="opasnost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="datum" type="xs:string" minOccurs="0" />
+        <xs:element name="vwdatum" type="xs:string" minOccurs="0" />
+        <xs:element name="broj_postaja" type="xs:string" minOccurs="0" />
+        <xs:element name="postaja" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" />
+              <xs:element name="ime" type="xs:string" minOccurs="0" />
+              <xs:element name="temperatura" type="xs:string" minOccurs="0" />
+              <xs:element name="vlaga" type="xs:string" minOccurs="0" />
+              <xs:element name="vjetar" type="xs:string" minOccurs="0" />
+              <xs:element name="oborina" type="xs:string" minOccurs="0" />
+              <xs:element name="ffmc" type="xs:string" minOccurs="0" />
+              <xs:element name="dmc" type="xs:string" minOccurs="0" />
+              <xs:element name="dc" type="xs:string" minOccurs="0" />
+              <xs:element name="isi" type="xs:string" minOccurs="0" />
+              <xs:element name="bui" type="xs:string" minOccurs="0" />
+              <xs:element name="fwi" type="xs:string" minOccurs="0" />
+              <xs:element name="indeks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="opasnost" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

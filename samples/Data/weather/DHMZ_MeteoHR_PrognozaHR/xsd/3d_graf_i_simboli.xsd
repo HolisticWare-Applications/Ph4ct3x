@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="trodnevna-trosatna" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="trodnevna-trosatna" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="izmjena" nillable="true">
+          <xs:complexType>
+            <xs:simpleContent msdata:ColumnName="izmjena_Text" msdata:Ordinal="1">
+              <xs:extension base="xs:string">
+                <xs:attribute name="run" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="grad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dan" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="t_2m" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                    <xs:element name="simbol" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="vjetar" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element name="oborina" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                  </xs:sequence>
+                  <xs:attribute name="datum" type="xs:string" />
+                  <xs:attribute name="dtj" type="xs:string" />
+                  <xs:attribute name="sat" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ime" type="xs:string" />
+            <xs:attribute name="code" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

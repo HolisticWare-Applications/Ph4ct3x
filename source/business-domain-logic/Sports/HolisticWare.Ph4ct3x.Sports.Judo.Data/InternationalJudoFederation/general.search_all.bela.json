@@ -1,0 +1,62 @@
+[
+    {
+        "module": "competitor",
+        "label": "BELABID, Ayoub",
+        "value": "BELABID, Ayoub",
+        "id": "3762"
+    },
+    {
+        "module": "competitor",
+        "label": "BELATTAR, Sofia",
+        "value": "BELATTAR, Sofia",
+        "id": "3839"
+    },
+    {
+        "module": "competitor",
+        "label": "BERIMBAU, Bela",
+        "value": "BERIMBAU, Bela",
+        "id": "11259"
+    },
+    {
+        "module": "competitor",
+        "label": "BELAOUINAT, Youcef",
+        "value": "BELAOUINAT, Youcef",
+        "id": "29705"
+    },
+    {
+        "module": "competitor",
+        "label": "BELALOUI, YOUNSSE",
+        "value": "BELALOUI, YOUNSSE",
+        "id": "39928"
+    },
+    {
+        "module": "competitor",
+        "label": "BELALOUI, YOUNESSE",
+        "value": "BELALOUI, YOUNESSE",
+        "id": "39929"
+    },
+    {
+        "module": "country",
+        "label": "BLR Belarus",
+        "value": "BLR Belarus",
+        "id": "16"
+    },
+    {
+        "module": "competition",
+        "label": "BLR - European Games Minsk 2019",
+        "value": "BLR - European Games Minsk 2019",
+        "id": "1735"
+    },
+    {
+        "module": "competition",
+        "label": "BLR - Minsk European Open 2018",
+        "value": "BLR - Minsk European Open 2018",
+        "id": "1583"
+    },
+    {
+        "module": "competition",
+        "label": "BLR - Minsk European Open 2017",
+        "value": "BLR - Minsk European Open 2017",
+        "id": "1459"
+    }
+]

@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.3</TargetFramework>
+        <LangVersion>Latest</LangVersion>
+        <RootNamespace>HolisticWare.Ph4ct3x.Utilities.Weather.DHMZ_MeteoHR_PrognozaHR</RootNamespace>
+        <!--
+        If moved to separate PropertyGroup - UI is cleared?!?!
+        -->
+        <PackOnBuild>true</PackOnBuild>
+        <PackageId>HolisticWare.Ph4ct3x.Utilities.Weather.DHMZ_MeteoHR_PrognozaHR</PackageId>
+        <Title>
+            HolisticWare.Ph4ct3x.Utilities.Weather.DHMZ_MeteoHR_PrognozaHR
+        </Title>
+        <summary>
+            HolisticWare.Ph4ct3x.Utilities.Weather.DHMZ_MeteoHR_PrognozaHR
+        </summary>
+        <Description>
+            HolisticWare.Ph4ct3x.Utilities.Weather.DHMZ_MeteoHR_PrognozaHR
+        </Description>
+        <Owners>HolisticWare, moljac</Owners>
+        <Authors>HolisticWare, moljac</Authors>
+        <Copyright>2020</Copyright>
+        <ProjectUrl>
+            https://github.com/HolisticWare-Applications/Ph4ct3x
+        </ProjectUrl>
+        <PackageProjectUrl>
+            https://github.com/HolisticWare-Applications/Ph4ct3x
+        </PackageProjectUrl>
+        <RepositoryUrl>
+            https://github.com/HolisticWare-Applications/Ph4ct3x
+        </RepositoryUrl>
+        <license>LICENSE</license>
+        <licenseUrl>
+            https://github.com/HolisticWare-Applications/Ph4ct3x/blob/master/LICENSE
+        </licenseUrl>
+        <PackageLicenseUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister/blob/master/LICENSE
+        </PackageLicenseUrl>
+        <iconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </iconUrl>
+        <PackageIconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+        </PackageIconUrl>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <!--
+        VersionSuffix - For debugging and local GitHub feed
+        -->
+        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
+        <PackageVersion>$(Version)</PackageVersion>
+    </PropertyGroup>
+    <PropertyGroup>
+        <!--
+        put the package output into a GitHub test folder
+        -->
+        <PackageOutputPath>../../../../output</PackageOutputPath>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+</Project>

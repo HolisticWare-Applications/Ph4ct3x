@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Training.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VolumeLoad\" />
+    <Folder Include="Abilities\" />
+    <Folder Include="Characteristics\" />
+    <Folder Include="Abilities\Strength\" />
+  </ItemGroup>
+</Project>

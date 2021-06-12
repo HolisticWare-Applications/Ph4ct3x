@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <RootNamespace>HolisticWare.Ph4ct3x.Utilities.Weather.Providers.DHMZ_MeteoHR_PrognozaHR</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+    If moved to separate PropertyGroup - UI is cleared?!?!
+    -->
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>HolisticWare.Ph4ct3x.Utilities.Weather.Providers.DHMZ_MeteoHR_PrognozaHR</PackageId>
+    <Title>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.DHMZ_MeteoHR_PrognozaHR
+    </Title>
+    <summary>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.DHMZ_MeteoHR_PrognozaHR
+    </summary>
+    <Description>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.DHMZ_MeteoHR_PrognozaHR
+    </Description>
+    <Owners>HolisticWare, moljac</Owners>
+    <Authors>HolisticWare, moljac</Authors>
+    <Copyright>$([System.DateTime]::Now.ToString('yyyy'))</Copyright>
+    <ProjectUrl>
+    </ProjectUrl>
+    <PackageProjectUrl>
+    </PackageProjectUrl>
+    <RepositoryUrl>
+    </RepositoryUrl>
+    <license>LICENSE</license>
+    <licenseUrl>
+    </licenseUrl>
+    <PackageLicenseUrl>
+    </PackageLicenseUrl>
+    <iconUrl>
+        https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+    </iconUrl>
+    <PackageIconUrl>
+        https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+    </PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Xml" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Utilities.Weather.Core\HolisticWare.Ph4ct3x.Utilities.Weather.Core.csproj" />
+  </ItemGroup>
+</Project>

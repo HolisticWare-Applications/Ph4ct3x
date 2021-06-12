@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <RootNamespace>HolisticWare.Ph4ct3x.Utilities.Weather.Providers.Foreca</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+    If moved to separate PropertyGroup - UI is cleared?!?!
+    -->
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>HolisticWare.Ph4ct3x.Utilities.Weather.Providers.Foreca</PackageId>
+    <Title>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.Foreca
+    </Title>
+    <summary>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.Foreca
+    </summary>
+    <Description>
+        HolisticWare.Ph4ct3x.Utilities.Weather.Providers.Foreca
+    </Description>
+    <Owners>HolisticWare, moljac</Owners>
+    <Authors>HolisticWare, moljac</Authors>
+    <Copyright>$([System.DateTime]::Now.ToString('yyyy'))</Copyright>
+    <ProjectUrl>
+    </ProjectUrl>
+    <PackageProjectUrl>
+    </PackageProjectUrl>
+    <RepositoryUrl>
+    </RepositoryUrl>
+    <license>LICENSE</license>
+    <licenseUrl>
+    </licenseUrl>
+    <PackageLicenseUrl>
+    </PackageLicenseUrl>
+    <iconUrl>
+        https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+    </iconUrl>
+    <PackageIconUrl>
+        https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+    </PackageIconUrl>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <!--
+    VersionSuffix - For debugging and local nuget feed
+    -->
+    <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
+    <PackageVersion>$(Version)</PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

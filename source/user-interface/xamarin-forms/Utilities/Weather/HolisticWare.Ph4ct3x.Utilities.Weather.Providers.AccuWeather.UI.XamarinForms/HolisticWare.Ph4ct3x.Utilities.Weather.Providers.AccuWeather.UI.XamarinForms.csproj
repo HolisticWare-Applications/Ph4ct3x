@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\business-domain-logic\Utilities\Weather\HolisticWare.Ph4ct3x.Utilities.Weather.Providers.AccuWeather\HolisticWare.Ph4ct3x.Utilities.Weather.Providers.AccuWeather.csproj" />
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.Utilities.Weather.Core.UI.XamarinForms\HolisticWare.Ph4ct3x.Utilities.Weather.Core.UI.XamarinForms.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,106 @@
+{
+    "1": {
+        "name": "Seniors",
+        "gender": "m",
+        "categories": {
+            "1": {
+                "name_short": "-60",
+                "name": "-60 kg"
+            },
+            "2": {
+                "name_short": "-66",
+                "name": "-66 kg"
+            },
+            "3": {
+                "name_short": "-73",
+                "name": "-73 kg"
+            },
+            "4": {
+                "name_short": "-81",
+                "name": "-81 kg"
+            },
+            "5": {
+                "name_short": "-90",
+                "name": "-90 kg"
+            },
+            "6": {
+                "name_short": "-100",
+                "name": "-100 kg"
+            },
+            "7": {
+                "name_short": "+100",
+                "name": "+100 kg"
+            },
+            "78": {
+                "name_short": "+90",
+                "name": "+90 kg"
+            },
+            "222": {
+                "name_short": "Nage-no-kata",
+                "name": "Nage-no-kata kg"
+            },
+            "223": {
+                "name_short": "Katame-no-kata",
+                "name": "Katame-no-kata kg"
+            },
+            "224": {
+                "name_short": "Ju-no-kata",
+                "name": "Ju-no-kata kg"
+            },
+            "225": {
+                "name_short": "Kime-no-kata",
+                "name": "Kime-no-kata kg"
+            },
+            "226": {
+                "name_short": "Kodokan-Goshin Jutsu",
+                "name": "Kodokan-Goshin Jutsu kg"
+            },
+            "227": {
+                "name_short": "Open",
+                "name": "Open kg"
+            }
+        }
+    },
+    "2": {
+        "name": "Seniors",
+        "gender": "f",
+        "categories": {
+            "8": {
+                "name_short": "-48",
+                "name": "-48 kg"
+            },
+            "9": {
+                "name_short": "-52",
+                "name": "-52 kg"
+            },
+            "10": {
+                "name_short": "-57",
+                "name": "-57 kg"
+            },
+            "11": {
+                "name_short": "-63",
+                "name": "-63 kg"
+            },
+            "12": {
+                "name_short": "-70",
+                "name": "-70 kg"
+            },
+            "13": {
+                "name_short": "-78",
+                "name": "-78 kg"
+            },
+            "14": {
+                "name_short": "+78",
+                "name": "+78 kg"
+            },
+            "79": {
+                "name_short": "+70",
+                "name": "+70 kg"
+            },
+            "228": {
+                "name_short": "Open",
+                "name": "Open kg"
+            }
+        }
+    }
+}

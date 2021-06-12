@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Scales\" />
+    <Folder Include="Capabilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical\HolisticWare.Ph4ct3x.DiagnosticTests.Motorical.csproj" />
+    <ProjectReference Include="..\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological\HolisticWare.Ph4ct3x.DiagnosticTests.Morphological.csproj" />
+  </ItemGroup>
+</Project>

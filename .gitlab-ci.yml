@@ -1,0 +1,113 @@
+####
+# Build Windows .NET Framework Applications on Linux using the mono image.
+# For docker image tags see https://store.docker.com/images/mono/plans/140b7546-967e-4e7d-b3f2-ad2102ecfc8b?tab=tags
+# -
+####
+
+#-----------------------------------------------------------------------------------------------------
+# Local Tests in Docker
+#   gitlab-runner exec docker build
+#-----------------------------------------------------------------------------------------------------
+
+#-----------------------------------------------------------------------------------------------------
+# Docker Image
+# https://hub.docker.com/_/mono/
+#-----------------------------------------------------------------------------------------------------
+
+
+#-----------------------------------------------------------------------------------------------------
+# Docker images - latest one is used
+
+# image: mono
+# image: microsoft/dotnet:latest
+# image: microsoft/aspnetcore-build:1.1
+#image: microsoft/aspnetcore-build:latest
+#-----------------------------------------------------------------------------------------------------
+
+
+variables:
+#  GIT_SUBMODULE_STRATEGY: recursive
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+# cache:
+#   paths:
+#   - ~/.local/share/NuGet/Cache
+#   - ~/.nuget/packages
+
+# Stages
+# Use stages to define stages that contain groups of jobs. stages is defined globally for the pipeline. 
+# Use stage in a job to define which stage the job is part of.
+# The order of the stages items defines the execution order for jobs:
+# Jobs in the same stage run in parallel.
+# Jobs in the next stage run after the jobs from the previous stage complete successfully.
+stages:
+  - build-mono-msbuild
+  - build-mono-slim-msbuild
+  - build-dotnet-latest
+  - build-cake
+  - test-nunit
+
+# build:mono:
+#   image: mono
+# build:mono-slim:
+#   image: mono-slim
+# build:dotnet-latest:
+#   image: microsoft/dotnet:latest
+# build:aspnetcore-1.1:
+#   image: microsoft/aspnetcore-build:1.1
+# build:mono:
+#   image: aspnetcore-latest/aspnetcore-latest
+  
+  
+job-build:
+ stage: build-cake
+
+ script:
+#  - PowerShell .\build.ps1
+#    - chmod +x ./build.sh
+#    - ./build.sh
+#  only:
+#    - develop
+
+# Build Artifacts
+# https://forum.gitlab.com/t/build-net-projects/1395/12
+Artifacts:
+
+# https://hub.docker.com/_/mono
+# gitlab-runner exec shell  build:dotnet-latest
+# gitlab-runner exec docker build:dotnet-latest
+build:dotnet-latest:
+  image: microsoft/dotnet:latest
+  stage: build-dotnet-latest
+  script:
+  - dotnet build ./source/business-domain-logic/Source.sln
+#  - dotnet tool install --global Cake.Tool
+#  - dotnet cake
+
+# https://hub.docker.com/_/mono
+# gitlab-runner exec shell  build:mono-latest
+# gitlab-runner exec docker build:mono-latest
+build:mono-latest:
+  image: mono:latest
+  stage: build-mono-msbuild
+  before_script:
+#  - chmod +x ./CI/gitlab/prepare-image.sh
+#  - ./CI/gitlab/prepare-image.sh
+  script:
+  - msbuild /restore ./source/business-domain-logic/Source.sln
+#  - chmod +x ./CI/gitlab/build.sh
+#  - ./CI/gitlab/build.sh
+
+
+# gitlab-runner exec shell build:mono-slim
+# build:mono-slim:
+#   image: mono:slim
+#   stage: build-mono-slim-msbuild
+#   before_script:
+#  - chmod +x ./CI/gitlab/prepare-image.sh
+#  - ./CI/gitlab/prepare-image.sh
+#   script:
+#   - msbuild /restore ./source/business-domain-logic/Source.sln
+#  - chmod +x ./CI/gitlab/build.sh
+#  - ./CI/gitlab/build.sh  

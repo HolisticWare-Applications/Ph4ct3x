@@ -41,6 +41,23 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: dotnet tools
+        run: |
+          cat << \EOF >> ~/.bash_profile
+          # Add .NET Core SDK tools
+          export PATH="$PATH:/root/.dotnet/tools"
+          EOF
+          cat ~/.bash_profile
+          export PATH="$PATH:/root/.dotnet/tools"
+      - name: install boots
+        run: |
+          dotnet tool install --global boots
+      - name: install SDKs
+        run: |
+          boots --stable Mono
+          boots --stable Xamarin.Android
+          boots --stable Xamarin.iOS
+          boots --stable Xamarin.Mac        
       - name: build ./source dotnet 
         run: |
           dotnet build ./source/business-domain-logic/Source.sln 
@@ -76,6 +93,23 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: dotnet tools
+        run: |
+          cat << \EOF >> ~/.bash_profile
+          # Add .NET Core SDK tools
+          export PATH="$PATH:/root/.dotnet/tools"
+          EOF
+          cat ~/.bash_profile
+          export PATH="$PATH:/root/.dotnet/tools"
+      - name: install boots
+        run: |
+          dotnet tool install --global boots
+      - name: install SDKs
+        run: |
+          boots --stable Mono
+          boots --stable Xamarin.Android
+          boots --stable Xamarin.iOS
+          boots --stable Xamarin.Mac
       - name: build ./source dotnet 
         run: |
           dotnet build ./source/business-domain-logic/Source.sln 
@@ -111,6 +145,23 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: dotnet tools
+        run: |
+          cat << \EOF >> ~/.bash_profile
+          # Add .NET Core SDK tools
+          export PATH="$PATH:/root/.dotnet/tools"
+          EOF
+          cat ~/.bash_profile
+          export PATH="$PATH:/root/.dotnet/tools"
+      - name: install boots
+        run: |
+          dotnet tool install --global boots
+      - name: install SDKs
+        run: |
+          boots --stable Mono
+          boots --stable Xamarin.Android
+          boots --stable Xamarin.iOS
+          boots --stable Xamarin.Mac
       - name: build ./source dotnet 
         uses: actions/setup-dotnet@v1
         with:
